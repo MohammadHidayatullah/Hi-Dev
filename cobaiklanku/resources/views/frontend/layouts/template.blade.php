@@ -9,7 +9,7 @@
     <meta name="author" content="Template Mo">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
 
-    <title>Art Factory HTML CSS Template</title>
+    <title>IKLANKU</title>
 <!--
 
 ART FACTORY
@@ -22,6 +22,7 @@ https://templatemo.com/tm-537-art-factory
     <link rel="stylesheet" type="text/css" href="{{ asset ('frontend/assets/css/font-awesome.css') }}">
     <link rel="stylesheet" type="text/css" href= "{{ asset ('frontend/assets/css/templatemo-art-factory.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset ('frontend/assets/css/owl-carousel.css') }}">
+    <link rel="stylesheet" type="text/css" href= "{{ asset ('frontend/assets/css/home.css') }}">
 
     </head>
     
@@ -48,9 +49,14 @@ https://templatemo.com/tm-537-art-factory
             <div class="container">
                 <div class="row">
                     <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                        <h1>Art Factory is free <strong>for YOU</strong></h1>
-                        <p>This template is available for 100% free of charge on TemplateMo. Download, modify and use this for your business website.</p>
-                        <a href="#about" class="main-button-slider">Find Out More</a>
+                        <h1><strong>IKLANKU</strong></h1>
+                        <p>merupakan platform digital yang menyediakan jasa untuk mengiklankan event webinar, dan juga lowongan pekerjaan untuk anda</p>
+                        <li class="nav-item hidden-sm-down">
+                            <form class="app-search ps-3">
+                                <input type="text" class="form-control" placeholder="Search for..."> <a
+                                    class="srh-btn"><i class="ti-search"></i></a>
+                            </form>
+                        </li>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
                         <img src="{{ asset ('frontend/assets/images/slider-icon.png') }}" class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
@@ -90,6 +96,12 @@ https://templatemo.com/tm-537-art-factory
     </section>
     <!-- ***** Features Big Item End ***** -->
 
+<!-- ***** Features Small Start ***** -->
+    <section class="section">
+        
+        
+    </section>
+    <!-- ***** Features Small End ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
     <section class="section" id="about2">
@@ -200,7 +212,49 @@ https://templatemo.com/tm-537-art-factory
     </section>
     <!-- ***** Features Small End ***** -->
 
+    <!-- ***** Features Big Item Start ***** -->
+    <section class="section" id="about2">
+        <div class="container">
+            <div class="row">
+                <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <div class="left-heading">
+                        <h5>Curabitur aliquam eget tellus id porta</h5>
+                    </div>
+                    <p>Proin justo sapien, posuere suscipit tortor in, fermentum mattis elit. Aenean in feugiat purus.</p>
+                    <ul>
+                        <li>
+                            <img src="{{ asset ('frontend/assets/images/about-icon-01.png') }}" alt="">
+                            <div class="text">
+                                <h6>Nulla ultricies risus quis risus</h6>
+                                <p>You can use this website template for commercial or non-commercial purposes.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{{ asset('frontend/assets/images/about-icon-02.png') }}" alt="">
+                            <div class="text">
+                                <h6>Donec consequat commodo purus</h6>
+                                <p>You have no right to re-distribute this template as a downloadable ZIP file on any website.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="{{ asset ('frontend/assets/images/about-icon-03.png') }}" alt="">
+                            <div class="text">
+                                <h6>Sed placerat sollicitudin mauris</h6>
+                                <p>If you have any question or comment, please <a rel="nofollow" href="{{ asset('frontend/https://templatemo.com/contact') }}">contact</a> us on TemplateMo.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-image col-lg-7 col-md-12 col-sm-12 mobile-bottom-fix-big" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
+                    <img src="{{ asset ('frontend/assets/images/right-image.png') }}" class="rounded img-fluid d-block mx-auto" alt="App">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ***** Features Big Item End ***** -->
 
+
+    
     <!-- ***** Frequently Question Start ***** -->
     <section class="section" id="frequently-question">
         <div class="container">
@@ -340,7 +394,7 @@ https://templatemo.com/tm-537-art-factory
                            3. Click "Share" and choose "Embed map" tab
                            4. Copy only URL and paste it within the src="" field below
                     -->
-                    <iframe src="https://www.google.com/maps/place/Politeknik+Negeri+Jember/@-8.1594718,113.720271,17z/data=!3m1!4b1!4m5!3m4!1s0x2dd695b617d8f623:0xf6c4437632474338!8m2!3d-8.1594771!4d113.7224597" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="{{ asset('frontend/https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907') }}" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <!-- ***** Contact Map End ***** -->
