@@ -19,3 +19,10 @@ Route::get('/', function () {
 Route::get('/home', function(){
     return view('frontend/layouts/home');
 });
+Route::get('/dashboard', function(){
+    return view('backend/layouts/dashboard');
+
+Auth::routes();
+});
+Route::resource('webinar', WebinarController::class);
+Route::resource('loker', LokerController::class);
