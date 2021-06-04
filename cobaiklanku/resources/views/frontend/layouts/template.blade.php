@@ -50,7 +50,8 @@ https://templatemo.com/tm-537-art-factory
                 <div class="row">
                     <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <h1><strong>IKLANKU</strong></h1>
-                        <p>merupakan platform digital yang menyediakan jasa untuk mengiklankan event webinar, dan juga lowongan pekerjaan untuk anda</p>
+                        <p>Sebuah platform digital yang menyediakan jasa untuk mengiklankan event webinar dan lowongan pekerjaan untuk anda. Temukan 
+                            webinar dan loker serta dapatkan kemudahan dan keuntunganya hanya di iklanku. </p>
                         <li class="nav-item hidden-sm-down">
                             <form class="app-search ps-3">
                                 <input type="text" class="form-control" placeholder="Search for..."> <a
@@ -76,15 +77,15 @@ https://templatemo.com/tm-537-art-factory
                 <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                     <img src="{{ asset('frontend/assets/images/left-image.png') }}" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
-                <div class="right-text col-lg-5 col-md-12 col-sm-12 mobile-top-fix">
+                <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
                     <div class="left-heading">
-                        <h5>Vivamus sodales nisi id ante molestie venenatis</h5>
+                        <h5>Webinar</h5>
                     </div>
-                    <div class="left-text">
-                        <p>This template is <a href="#">last updated on 20 August 2019 </a>for main menu drop-down arrow and sub menu text color. Duis auctor dolor eu scelerisque vestibulum. Vestibulum lacinia, nisl sit amet tristique condimentum. <br><br>
-                        Sed a consequat velit. Morbi lectus sapien, vestibulum et sapien sit amet, ultrices malesuada odio. Donec non quam euismod, mattis dui a, ultrices nisi.</p>
-                        <a href="#about2" class="main-button">Discover More</a>
-                    </div>
+                    <p>Pasang iklan webinar anda agar terhubung dengan leads berpotensi untuk event anda. Dapatkan juga sarana Branding
+                    dan promosi produk yang tertarget dengan Iklanku. </p>
+                    <ul>
+                        <a href="#" class="main-button">Pasang Iklan Webinar</a>
+                    </ul>
                 </div>
             </div>
             <div class="row">
@@ -172,29 +173,29 @@ https://templatemo.com/tm-537-art-factory
             <div class="row">
                 <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
                     <div class="left-heading">
-                        <h5>Curabitur aliquam eget tellus id porta</h5>
+                        <h5>Lowongan Pekerjaan</h5>
                     </div>
-                    <p>Proin justo sapien, posuere suscipit tortor in, fermentum mattis elit. Aenean in feugiat purus.</p>
+                    <p>Pasang iklan lowongan pekerjaan dan temukan pencari kerja yang potensial. Dapatkan kemudahan dan keuntungan di Iklanku.</p>
                     <ul>
                         <li>
                             <img src="{{ asset ('frontend/assets/images/about-icon-01.png') }}" alt="">
                             <div class="text">
-                                <h6>Nulla ultricies risus quis risus</h6>
-                                <p>You can use this website template for commercial or non-commercial purposes.</p>
+                                <h6>Menjangkau Lebih Banyak Kandidat</h6>
+                                <p></p>
                             </div>
                         </li>
                         <li>
                             <img src="{{ asset('frontend/assets/images/about-icon-02.png') }}" alt="">
                             <div class="text">
-                                <h6>Donec consequat commodo purus</h6>
-                                <p>You have no right to re-distribute this template as a downloadable ZIP file on any website.</p>
+                                <h6>Fleksibel dan tak Terbatas</h6>
+                                <p></p>
                             </div>
                         </li>
                         <li>
                             <img src="{{ asset ('frontend/assets/images/about-icon-03.png') }}" alt="">
                             <div class="text">
-                                <h6>Sed placerat sollicitudin mauris</h6>
-                                <p>If you have any question or comment, please <a rel="nofollow" href="{{ asset('frontend/https://templatemo.com/contact') }}">contact</a> us on TemplateMo.</p>
+                                <h6>Membangun dan Menarik Minat Kandidat</h6>
+                                <p></p>
                             </div>
                         </li>
                     </ul>
