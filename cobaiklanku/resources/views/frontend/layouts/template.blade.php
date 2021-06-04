@@ -96,12 +96,6 @@ https://templatemo.com/tm-537-art-factory
     </section>
     <!-- ***** Features Big Item End ***** -->
 
-<!-- ***** Features Small Start ***** -->
-    <section class="section">
-        
-        
-    </section>
-    <!-- ***** Features Small End ***** -->
 
     <!-- ***** Features Big Item Start ***** -->
     <section class="section" id="about2">
