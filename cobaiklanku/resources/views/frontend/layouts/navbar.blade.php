@@ -15,7 +15,7 @@
                         <li class="scroll-to-section"><a href="#services">Loker</a></li>
                         <li class="scroll-to-section"><a href="#frequently-question">FAQ</a></li>
                         <li class="scroll-to-section"><a href="#frequently-question">Sign Up</a></li>
-                        <button class="btn btn-outline-info" type="submit"><a href="/login">Login</a></li>
+                        <button class="btn btn-light" type="submit"><a href="/login">Login</a></li>
                     </ul>
                     <a class='menu-trigger'>
                         <span>Menu</span>
