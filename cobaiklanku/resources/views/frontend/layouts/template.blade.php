@@ -50,8 +50,8 @@ https://templatemo.com/tm-537-art-factory
                 <div class="row">
                     <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <h1><strong>IKLANKU</strong></h1>
-                        <p>Sebuah platform digital yang menyediakan jasa untuk mengiklankan event webinar dan lowongan pekerjaan untuk anda. Temukan 
-                            webinar dan loker serta dapatkan kemudahan dan keuntunganya hanya di iklanku. </p>
+                        <p>Sebuah platform digital yang menyediakan jasa untuk mengiklankan event webinar dan lowongan pekerjaan untuk Anda. Temukan 
+                            webinar dan loker serta dapatkan kemudahan dan keuntunganya hanya di Iklanku. </p>
                         <li class="nav-item hidden-sm-down">
                             <form class="app-search ps-3">
                                 <input type="text" class="form-control" placeholder="Search for..."> <a
@@ -81,7 +81,7 @@ https://templatemo.com/tm-537-art-factory
                     <div class="left-heading">
                         <h5>Webinar</h5>
                     </div>
-                    <p>Pasang iklan webinar anda agar terhubung dengan leads berpotensi untuk event anda. Dapatkan juga sarana Branding
+                    <p>Pasang iklan webinar Anda agar terhubung dengan leads berpotensi untuk event Anda. Dapatkan juga sarana Branding
                     dan promosi produk yang tertarget dengan Iklanku. </p>
                     <ul>
                         <a href="#" class="main-button">Pasang Iklan Webinar</a>
@@ -273,7 +273,7 @@ https://templatemo.com/tm-537-art-factory
                 </div>
                 <div class="offset-lg-3 col-lg-6">
                     <div class="section-heading">
-                        <p>Vivamus venenatis eu mi ac mattis. Maecenas ut elementum sapien. Nunc euismod risus ac lobortis congue. Sed erat quam.</p>
+                        <p>Anda Bertanya Kami Menjawab</p>
                     </div>
                 </div>
             </div>
@@ -281,11 +281,10 @@ https://templatemo.com/tm-537-art-factory
 
             <div class="row">
                 <div class="left-text col-lg-6 col-md-6 col-sm-12">
-                    <h5>Class aptent taciti sociosqu ad litora torquent per conubia</h5>
+                    <h5>Tentang Iklanku</h5>
                     <div class="accordion-text">
-                        <p>Curabitur placerat diam in risus lobortis, laoreet porttitor est elementum. Nulla ultricies risus quis risus scelerisque, a aliquam tellus maximus. Cras pretium nulla ac convallis iaculis. Aenean bibendum erat vitae odio sodales, in facilisis tellus volutpat.</p>
-                        <p>Sed lobortis pellentesque magna ac congue. Suspendisse quis molestie magna, id eleifend ex. Ut mollis ultricies diam nec dictum. Morbi commodo hendrerit mi vel vulputate. Proin non tincidunt dui. Lorem ipsum dolor sit amet.</p>
-                        <span>Email: <a href="#">email@company.com</a><br></span>
+                        <p>Ingin memasang iklan webinar dan lowongan pekerjaan di Iklanku ? Silahkan <a href="/login">Login</a><br>terlebih dahulu, dan siapkan upload pamflet event anda sesuai ketentuan.</p>
+                        <span>Email: <a href="#">infoiklanku@gmail.com</a><br></span>
                         <a href="#contact-us" class="main-button">Contact Us</a>
                     </div>
                 </div>
@@ -293,7 +292,7 @@ https://templatemo.com/tm-537-art-factory
                     <div class="accordions is-first-expanded">
                         <article class="accordion">
                             <div class="accordion-head">
-                                <span>First Common Question</span>
+                                <span>Bagaimana cara mengupload iklan webinar atau loker ?</span>
                                 <span class="icon">
                                     <i class="icon fa fa-chevron-right"></i>
                                 </span>
@@ -308,7 +307,7 @@ https://templatemo.com/tm-537-art-factory
                         </article>
                         <article class="accordion">
                             <div class="accordion-head">
-                                <span>Second Question Answer</span>
+                                <span>Apa saja ketentuan pamflet yang diupload nanti ?</span>
                                 <span class="icon">
                                     <i class="icon fa fa-chevron-right"></i>
                                 </span>
@@ -323,7 +322,7 @@ https://templatemo.com/tm-537-art-factory
                         </article>
                         <article class="accordion">
                             <div class="accordion-head">
-                                <span>Third Answer for you</span>
+                                <span>Apakah setelah upload pamflet, pamflet sudah terdaftar dalam website ?</span>
                                 <span class="icon">
                                     <i class="icon fa fa-chevron-right"></i>
                                 </span>
@@ -338,7 +337,7 @@ https://templatemo.com/tm-537-art-factory
                         </article>
                         <article class="accordion">
                             <div class="accordion-head">
-                                <span>Fourth Question Asked</span>
+                                <span>Apakah website ini juga akan menghubungkan dengan link pendaftaran yang dipilih oleh user ?</span>
                                 <span class="icon">
                                     <i class="icon fa fa-chevron-right"></i>
                                 </span>
@@ -353,7 +352,7 @@ https://templatemo.com/tm-537-art-factory
                         </article>
                         <article class="accordion">
                             <div class="accordion-head">
-                                <span>Fifth Ever Question</span>
+                                <span>Bagaimana cara agar bisa mengiklankan event webinar atau loker ?</span>
                                 <span class="icon">
                                     <i class="icon fa fa-chevron-right"></i>
                                 </span>
@@ -368,7 +367,7 @@ https://templatemo.com/tm-537-art-factory
                         </article>
                         <article class="accordion">
                             <div class="accordion-head">
-                                <span>Sixth Sense Question</span>
+                                <span>Apakah kami bisa memilih bidang webinar atau loker sesuai keinginan kami ?</span>
                                 <span class="icon">
                                     <i class="icon fa fa-chevron-right"></i>
                                 </span>

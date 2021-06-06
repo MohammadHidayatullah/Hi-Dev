@@ -78,10 +78,9 @@
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New here ?</h3>
+            <h3>Ingin Bergabung ?</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+              Bergabung dengan Iklanku secara mudah dan cepat. 
             </p>
             <button class="btn transparent" id="sign-up-btn">
               Sign up
@@ -91,10 +90,9 @@
         </div>
         <div class="panel right-panel">
           <div class="content">
-            <h3>One of us ?</h3>
+            <h3>Ingin Terhubung ?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
+              Iklanku membantu Anda terhubung dan berbagi informasi dengan orang lain untuk event Anda. 
             </p>
             <button class="btn transparent" id="sign-in-btn">
               Sign in

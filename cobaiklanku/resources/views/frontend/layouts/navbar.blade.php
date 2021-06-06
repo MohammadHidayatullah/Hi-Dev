@@ -14,7 +14,7 @@
                         <li class="scroll-to-section"><a href="#about">Webinar</a></li>
                         <li class="scroll-to-section"><a href="#about2">Loker</a></li>
                         <li class="scroll-to-section"><a href="#frequently-question">FAQ</a></li>
-                        <li class="scroll-to-section"><a href="#frequently-question">Sign Up</a></li>
+                        <li class="nav-item"><a href="/login">Sign Up</a></li>
                         <button class="btn btn-light" type="submit"><a href="/login">Login</a></li>
                     </ul>
                     <a class='menu-trigger'>
