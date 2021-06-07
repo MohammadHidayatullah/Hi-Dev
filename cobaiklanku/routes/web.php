@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::get('/home', function(){
     return view('frontend/layouts/home');
 });
+Route::get('/addwebinar', function(){
+    return view('frontend/layouts/addwebinar');
+});
 
 Route::get('/login', function(){
     return view('frontend/layouts/login');
