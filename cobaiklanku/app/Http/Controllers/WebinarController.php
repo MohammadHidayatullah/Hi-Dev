@@ -18,13 +18,18 @@ class WebinarController extends Controller
     }
     public function store(Request $request)
     {
+        if ($request->hasfile('pamflet')) {
+            $pamflet = $request->file('pamflet');
+            $namapamflet = $pamflet->getClientOriginalName();
+            $pathpamflet = $pamflet->move('images/webinar', $namapamflet);
         DB::table('tb_webinar')->insert([
-            'pamflet_webinar' => $request->pamflet,
-            'judul_webinar' =>$request->judul,
+            'pamflet_webinar' => $namapamflet,
+            'judul_webinar' => $request->judul,
             'deskripsi'=>$request->deskripsi,
             'deadline'=>$request->deadline,
             'link'=>$request->link
         ]);
+        }
             return redirect()->route('webinar.index')
                              ->with('success', 'Data webinar baru telah disimpan');
         }

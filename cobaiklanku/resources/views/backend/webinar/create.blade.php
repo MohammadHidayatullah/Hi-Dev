@@ -40,7 +40,7 @@
                         @endif
                         <div class="panel-body">
                             <div class="form">
-                                <form class="form-validate form-horizontal" id="webinar_form" method="POST"
+                                <form class="form-validate form-horizontal" id="webinar_form" method="POST"  enctype="multipart/form-data"
                                 action="{{ isset($webinar) ? route('webinar.update', $webinar->id) : route('webinar.store') }}">
                                 {!! csrf_field() !!}
                                 {!! isset($webinar) ? method_field('PUT') : '' !!}
@@ -49,7 +49,7 @@
                                     <label for="cname" class="control-label col-lg-2">Pamflet Webinar
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="text" class="form-control" id="pamflet" name="pamflet" minlenght="5"
+                                        <input type="file" class="form-control" id="pamflet" name="pamflet"
                                         value="{{ isset($webinar) ? $webinar->pamflet_webinar : '' }}" require/>
                                     </div>
                                 </div>

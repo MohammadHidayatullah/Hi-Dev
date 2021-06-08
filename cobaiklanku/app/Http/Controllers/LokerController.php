@@ -18,13 +18,19 @@ class LokerController extends Controller
     }
     public function store(Request $request)
     {
+        
+        if ($request->hasfile('pamflet')) {
+            $pamflet = $request->file('pamflet');
+            $namapamflet = $pamflet->getClientOriginalName();
+            $pathpamflet = $pamflet->move('images/loker', $namapamflet);
         DB::table('tb_loker')->insert([
-            'pamflet_loker' => $request->pamflet,
+            'pamflet_loker' => $namapamflet,
             'judul_loker' =>$request->judul,
             'deskripsi'=>$request->deskripsi,
             'deadline'=>$request->deadline,
             'link'=>$request->link
         ]);
+        }
             return redirect()->route('loker.index')
                              ->with('success', 'Data loker baru telah disimpan');
         }
