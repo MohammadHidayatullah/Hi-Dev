@@ -101,6 +101,11 @@ https://templatemo.com/tm-537-art-factory
    <!-- ***** Features Small Start ***** -->
    <section class="section" id="services">
     <div class="container">
+        <div class="row text-center mb-5 " style ="margin-top: -70px;">
+            <div class="col">
+                <h2>WEBINAR</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="owl-carousel owl-theme">
                 <div class="card" style="width: 18rem;">
@@ -196,10 +201,15 @@ https://templatemo.com/tm-537-art-factory
     <!-- ***** Features Small Start ***** -->
     <section class="section" id="services">
         <div class="container">
+            <div class="row text-center mb-5 " style ="margin-top: -70px;">
+                <div class="col">
+                    <h2>LOWONGAN PEKERJAAN</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="owl-carousel owl-theme">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar1.jpg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker1.jpeg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -207,7 +217,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div> 
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar2.jpg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker2.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -215,7 +225,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div> 
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar3.jpg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker3.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -223,7 +233,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div> 
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar4.jpg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker4.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -231,7 +241,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div> 
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -383,7 +393,7 @@ https://templatemo.com/tm-537-art-factory
                            3. Click "Share" and choose "Embed map" tab
                            4. Copy only URL and paste it within the src="" field below
                     -->
-                    <iframe src="{{ asset('frontend/https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907') }}" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <!-- ***** Contact Map End ***** -->
