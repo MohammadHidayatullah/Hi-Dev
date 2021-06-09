@@ -199,7 +199,7 @@ https://templatemo.com/tm-537-art-factory
             <div class="row">
                 <div class="owl-carousel owl-theme">
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar1.jpg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker1.jpeg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -207,7 +207,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div> 
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar2.jpg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker2.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -215,7 +215,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div> 
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar3.jpg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker3.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -223,7 +223,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div> 
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar4.jpg') }}" class="card-img-top" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker4.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -231,7 +231,7 @@ https://templatemo.com/tm-537-art-factory
                         </div>
                     </div> 
                     <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
+                        <img src="{{ asset ('frontend/assets/images/loker5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Card title</h5>
                           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
