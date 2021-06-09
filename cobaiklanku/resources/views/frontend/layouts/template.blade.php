@@ -101,6 +101,11 @@ https://templatemo.com/tm-537-art-factory
    <!-- ***** Features Small Start ***** -->
    <section class="section" id="services">
     <div class="container">
+        <div class="row text-center mb-5 " style ="margin-top: -70px;">
+            <div class="col">
+                <h2>WEBINAR</h2>
+            </div>
+        </div>
         <div class="row">
             <div class="owl-carousel owl-theme">
                 <div class="card" style="width: 18rem;">
@@ -196,6 +201,11 @@ https://templatemo.com/tm-537-art-factory
     <!-- ***** Features Small Start ***** -->
     <section class="section" id="services">
         <div class="container">
+            <div class="row text-center mb-5 " style ="margin-top: -70px;">
+                <div class="col">
+                    <h2>LOWONGAN PEKERJAAN</h2>
+                </div>
+            </div>
             <div class="row">
                 <div class="owl-carousel owl-theme">
                     <div class="card" style="width: 18rem;">
