@@ -13,24 +13,23 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/home', function(){
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::get('/', function(){
     return view('frontend/layouts/home');
 });
 Route::get('/addwebinar', function(){
     return view('frontend/layouts/addwebinar');
 });
 
-Route::get('/login', function(){
-    return view('frontend/layouts/login');
-});
-Route::get('/dashboard', function(){
-    return view('backend/layouts/dashboard');
-
 Auth::routes();
+Route::group(['middleware' => 'auth'], function () {
+    Route::group(['namespace' => 'backend'], function () {
+        Route::resource('dashboard', DashboardController::class);
+    });
+    Route::resource('webinar', WebinarController::class);
+    Route::resource('loker', LokerController::class);
 });
-Route::resource('webinar', WebinarController::class);
-Route::resource('loker', LokerController::class);
 
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
