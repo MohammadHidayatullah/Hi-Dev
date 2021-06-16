@@ -49,7 +49,7 @@ class LoginController extends Controller
         ];
 
         if (auth()->attempt($login)) {
-            return redirect()->route('admin');
+            return redirect()->route('dashboard.index');
         }
         return redirect()->route('login')->with(['error' => 'Email/Password salah!']);
     }
