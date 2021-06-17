@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
-Route::get('/', function(){
-    return view('frontend/layouts/home');
-});
+// Route::get('/home', function(){
+//     return view('frontend/layouts/home');
+// })->name('home');
 Route::get('/addwebinar', function(){
     return view('frontend/layouts/addwebinar');
 });
@@ -32,4 +32,4 @@ Route::group(['middleware' => 'auth'], function () {
     Route::resource('loker', LokerController::class);
 });
 
-// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

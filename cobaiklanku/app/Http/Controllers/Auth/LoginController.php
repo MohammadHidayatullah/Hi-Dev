@@ -35,6 +35,11 @@ class LoginController extends Controller
      *
      * @return void
      */
+    public function __construct()
+    {
+        $this->middleware('guest')->except('logout');
+    }
+    
     public function login(Request $request)
     {
         $this->validate($request, [
@@ -49,7 +54,11 @@ class LoginController extends Controller
         ];
 
         if (auth()->attempt($login)) {
-            return redirect()->route('dashboard.index');
+            if(Auth::user()->role == 'user'){
+                return redirect()->route('home');
+            }else if(Auth::user()->role == 'admin'){
+                return redirect()->route('dashboard.index');
+            }
         }
         return redirect()->route('login')->with(['error' => 'Email/Password salah!']);
     }
