@@ -11,7 +11,7 @@
                 <li><i class="ico_document_alt"></i>Daftar Loker</li>
                 <li><i class="fa fa-files-o"></i>Tambah Loker</li>
             </ol>
-        </div>    
+        </div>
         </div>
 
         <!-- form -->
@@ -27,7 +27,7 @@
                             <p>{{ $message }}</p>
                         </div>
                         @endif
-                       
+
                             <table class="table table-striped table-advance table-hover">
                                 <tbody>
                                     <tr>
@@ -36,6 +36,7 @@
                                         <th>Deskripsi</th>
                                         <th>Deadline</th>
                                         <th>Link</th>
+                                        <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                     @foreach ($loker as $item)
@@ -45,14 +46,24 @@
                                         <td>{{ $item->deskripsi }}</td>
                                         <td>{{ $item->deadline}}</td>
                                         <td>{{ $item->link}}</td>
+                                        <td>{{ $item->status}}</td>
                                         <td>
                                             <div class="btn-group">
+                                                <form
+                                                    action="{{route('loker.konfirmasi',$item->id)}}"
+                                                    method="POST">
+                                                    @method('PUT')
+                                                    <button type="submit" class="btn btn-primary"
+                                                        onclick="return confirm('Pakah Anda Yakin Ingin Mengaktifkan Data Ini?')">
+                                                        <i class="fa fa-check"></i></button>
+                                                </form>
                                                 <form action="{{ route('loker.destroy', $item->id) }}" method="POST">
+
                                                     <a class="btn btn-warning" href="{{ route('loker.edit', $item->id) }}">
                                                         <i class="fa fa-edit"></i></a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger" 
+                                                    <button type="submit" class="btn btn-danger"
                                                     onclick="return confirm('Apakah Anda yakin menghapus data?')">
                                                     <i class="fa fa-trash-o"></i></button>
                                                 </form>
