@@ -24,16 +24,13 @@ Route::get('/addwebinar', function(){
 });
 
 Auth::routes();
-Route::group(['middleware' => 'auth'],
-function () {
-    Route::group(['namespace' => 'backend'],
-    function () {
+Route::group(['middleware' => 'auth'], function () {
+    Route::group(['namespace' => 'backend'], function () {
         Route::resource('dashboard', DashboardController::class);
     });
     Route::resource('webinar', WebinarController::class);
     Route::resource('loker', LokerController::class);
-    Route::put('loker/konfirmasi/{tb_loker}', 'LokerController@konfirmasi')->name('loker.konfirmasi');
+    Route::put('loker/active/{loker}','LokerController@active')->name('loker.active');
+    Route::put('loker/nonactive/{loker}','LokerController@nonactive')->name('loker.nonactive');
 });
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-

@@ -20,7 +20,6 @@ class CreateTbWebinarTable extends Migration
             $table->text('deskripsi');
             $table->date('deadline');
             $table->string('link', 100);
-            $table->string('status')->nullable();
             $table->timestamps();
         });
     }
