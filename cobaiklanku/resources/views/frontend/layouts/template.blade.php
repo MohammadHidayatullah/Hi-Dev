@@ -25,9 +25,9 @@ https://templatemo.com/tm-537-art-factory
     <link rel="stylesheet" type="text/css" href= "{{ asset ('frontend/assets/css/home.css') }}">
 
     </head>
-    
+
     <body>
-    
+
     <!-- ***** Preloader Start ***** -->
     <div id="preloader">
         <div class="jumper">
@@ -35,10 +35,10 @@ https://templatemo.com/tm-537-art-factory
             <div></div>
             <div></div>
         </div>
-    </div>  
+    </div>
     <!-- ***** Preloader End ***** -->
-    
-    
+
+
     @include('frontend/layouts/navbar')
 
     <!-- ***** Welcome Area Start ***** -->
@@ -50,7 +50,7 @@ https://templatemo.com/tm-537-art-factory
                 <div class="row">
                     <div class="left-text col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                         <h1><strong>IKLANKU</strong></h1>
-                        <p>Sebuah platform digital yang menyediakan jasa untuk mengiklankan event webinar dan lowongan pekerjaan untuk Anda. Temukan 
+                        <p>Sebuah platform digital yang menyediakan jasa untuk mengiklankan event webinar dan lowongan pekerjaan untuk Anda. Temukan
                             webinar dan loker serta dapatkan kemudahan dan keuntunganya hanya di Iklanku. </p>
                         <li class="nav-item hidden-sm-down">
                             <form class="app-search ps-3">
@@ -111,41 +111,41 @@ https://templatemo.com/tm-537-art-factory
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar1.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">BSI DIGINATION</h5>
+                      <p class="card-text">"Self-Actualization Towards New Normal Era". 24 Juni 2020, 10.00 s/d 11.00 WIB</p>
+                      <a href="#" class="btn btn-primary">Daftar</a>
                     </div>
-                </div> 
+                </div>
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar2.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Webinar Kesehatan</h5>
+                      <p class="card-text">"Edukasi Pencegahan & Pengendalian Covid-19". 17 Desember 2020, 08.00 WIB s/d selesai</p>
+                      <a href="#" class="btn btn-primary">Daftar</a>
                     </div>
-                </div> 
+                </div>
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar3.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Webinar Kesehatan</h5>
+                      <p class="card-text">"Strategi Pemberian Imunisasi Tambahan Pada Daerah Cakupan Imunisasi Rendah"</p>
+                      <a href="#" class="btn btn-primary">Daftar</a>
                     </div>
-                </div> 
+                </div>
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar4.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Webinar Perbankan</h5>
+                      <p class="card-text">"Strategi Peningkatan Kredit Konsumer". 17 Juli 2020, 16.00 s/d 17.30 WIB</p>
+                      <a href="#" class="btn btn-primary">Daftar</a>
                     </div>
-                </div> 
+                </div>
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Webinar Politik</h5>
+                      <p class="card-text">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
+                      <a href="#" class="btn btn-primary">Daftar</a>
                     </div>
                 </div>
             </div>
@@ -211,41 +211,41 @@ https://templatemo.com/tm-537-art-factory
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker1.jpeg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Tenaga Kontrak</h5>
+                          <p class="card-text">Lamaran ditujukan kepada Kepala SMKN 2 Pangkalpinang. Paling lambat 17 Januari 2020</p>
+                          <a href="#" class="btn btn-primary">Daftar</a>
                         </div>
-                    </div> 
+                    </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker2.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">General Affair & Auditor</h5>
+                          <p class="card-text">Larita Bakery Shop. Laki-laki, usia maksimal 30 tahun. Dan dapat bekerja dalam tim.</p>
+                          <a href="#" class="btn btn-primary">Daftar</a>
                         </div>
-                    </div> 
+                    </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker3.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">PT Pos Indonesia</h5>
+                          <p class="card-text">Marketing-Custommer Service-Account Executive-Tenaga Pengantar. Kunjungi lowongancpnsbumn.com</p>
+                          <a href="#" class="btn btn-primary">Daftar</a>
                         </div>
-                    </div> 
+                    </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker4.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Tenaga Pendidik Tetap</h5>
+                          <p class="card-text">Lamaran dikirim ke Yayasan Thawalib Padang Panjang. Lamaran ditutup 30 Nophember 2020.</p>
+                          <a href="#" class="btn btn-primary">Daftar</a>
                         </div>
-                    </div> 
+                    </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
                         <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <h5 class="card-title">Kepala Distributor</h5>
+                          <p class="card-text">PT. Nabawi Herbal Indonesia. Pria, Maksimal 40 tahun. Pendidikan minimal S1/Sederajat.</p>
+                          <a href="#" class="btn btn-primary">Daftar</a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +254,7 @@ https://templatemo.com/tm-537-art-factory
     </section>
     <!-- ***** Features Small End ***** -->
 
-    
+
     <!-- ***** Frequently Question Start ***** -->
     <section class="section" id="frequently-question">
         <div class="container">
@@ -282,7 +282,7 @@ https://templatemo.com/tm-537-art-factory
                   </h2>
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>Kunjungi iklanku.com</strong> Search webinar atau loker yang diinginkan dan nantikan informasi terbarunya.
                     </div>
                   </div>
                 </div>
@@ -294,7 +294,7 @@ https://templatemo.com/tm-537-art-factory
                   </h2>
                   <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>Login menggunakna email terlebih dahulu</strong> Pilih tombol Add webinar untuuk menambahkan webinar dan klik Add loker untuk menambahkan loker.
                     </div>
                   </div>
                 </div>
@@ -306,7 +306,7 @@ https://templatemo.com/tm-537-art-factory
                   </h2>
                   <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                      <strong>GRATIS dengan syarat ketentuan yang berlaku</strong> User tidak dipungut biaya apapun dalam beriklan di iklanku dengan syarat ketentuan yang berlaku.
                     </div>
                   </div>
                 </div>
@@ -369,14 +369,14 @@ https://templatemo.com/tm-537-art-factory
     </section>
     <!-- ***** Contact Us End ***** -->
 
-    
+
     <!-- ***** Footer Start ***** -->
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12">
-                    <p class="copyright">Copyright &copy; 2020 Art Factory Company 
-                
+                    <p class="copyright">Copyright &copy; 2020 Art Factory Company
+
                 . Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
                 </div>
                 <div class="col-lg-5 col-md-12 col-sm-12">
@@ -391,7 +391,7 @@ https://templatemo.com/tm-537-art-factory
             </div>
         </div>
     </footer>
-    
+
     <!-- jQuery -->
     <script src="{{ asset('frontend/assets/js/jquery-2.1.0.min.js') }}"></script>
 
@@ -404,8 +404,8 @@ https://templatemo.com/tm-537-art-factory
     <script src="{{ asset('frontend/assets/js/scrollreveal.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/waypoints.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/jquery.counterup.min.js') }}"></script>
-    <script src="{{ asset('frontend/assets/js/imgfix.min.js') }}"></script> 
-    
+    <script src="{{ asset('frontend/assets/js/imgfix.min.js') }}"></script>
+
     <!-- Global Init -->
     <script src="{{ asset('frontend/assets/js/custom.js') }}"></script>
 
