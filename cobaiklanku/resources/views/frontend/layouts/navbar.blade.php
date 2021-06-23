@@ -27,7 +27,7 @@
                                 </form>
                         </li>
                         @else
-                        <li class="nav-item"><a href="/login">Login</a></li>
+                        <button class="btn btn-light" type="submit"><a href="/login">Login</a></li>
                         @endif
                     </ul>
                     <a class='menu-trigger'>

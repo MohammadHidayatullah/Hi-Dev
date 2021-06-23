@@ -267,115 +267,51 @@ https://templatemo.com/tm-537-art-factory
                 </div>
                 <div class="offset-lg-3 col-lg-6">
                     <div class="section-heading">
-                        <p>Anda Bertanya Kami Menjawab</p>
+                        <p></p>
                     </div>
                 </div>
             </div>
             <!-- ***** Section Title End ***** -->
 
-            <div class="row">
-                <div class="left-text col-lg-6 col-md-6 col-sm-12">
-                    <h5>Tentang Iklanku</h5>
-                    <div class="accordion-text">
-                        <p>Ingin memasang iklan webinar dan lowongan pekerjaan di Iklanku ? Silahkan <a href="/login">Login</a><br>terlebih dahulu, dan siapkan upload pamflet event anda sesuai ketentuan.</p>
-                        <span>Email: <a href="#">infoiklanku@gmail.com</a><br></span>
-                        <a href="#contact-us" class="main-button">Contact Us</a>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Bagaimana cara menggunakan Website ini?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
+                  </div>
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-12">
-                    <div class="accordions is-first-expanded">
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Bagaimana cara mengupload iklan webinar atau loker ?</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
-                                </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Duis vulputate porttitor urna sit amet pretium. Phasellus sed pulvinar eros, condimentum consequat ex. Suspendisse potenti.
-                                    <br><br>
-                                    Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Apa saja ketentuan pamflet yang diupload nanti ?</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
-                                </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Sed odio elit, cursus sed consequat at, rutrum eget augue. Cras ac eros iaculis, tempor quam sit amet, scelerisque mi. Quisque eu risus eget nunc porttitor vestibulum at a ante.
-                                    <br><br>
-                                    Praesent ut placerat turpis, vel pellentesque dolor. Sed rutrum eleifend tortor, eu luctus orci sagittis in. In blandit fringilla mollis.</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Apakah setelah upload pamflet, pamflet sudah terdaftar dalam website ?</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
-                                </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Proin feugiat ante ut vulputate rutrum. Nam quis erat turpis. Nullam maximus pharetra lorem, eu condimentum est iaculis ut. Pellentesque mattis ultrices dignissim. 
-                                    <br><br>
-                                    Etiam et enim finibus, feugiat massa efficitur, finibus sapien. Sed cursus lacus quis arcu scelerisque, eget ornare risus maximus. Aenean non lectus id odio rhoncus pharetra.</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Apakah website ini juga akan menghubungkan dengan link pendaftaran yang dipilih oleh user ?</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
-                                </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Phasellus eu purus ornare, eleifend orci nec, egestas nulla. Sed sed aliquet sapien. Proin placerat, ipsum eu posuere blandit, tellus quam consectetur nisi, id sollicitudin diam ex at nisi.
-                                    <br><br>
-                                    Aenean fermentum eget turpis egestas semper. Sed finibus mollis venenatis. Praesent at sem in massa iaculis pharetra.</p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Bagaimana cara agar bisa mengiklankan event webinar atau loker ?</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
-                                </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Quisque aliquet ipsum ut magna rhoncus, euismod lacinia elit rhoncus. Sed sapien elit, mollis ut ultricies quis, fermentum nec ante.
-                                    <br><br>
-                                    Sed nec ex nec tortor fermentum sollicitudin id ut ligula. Ut sagittis rutrum lectus, non sagittis ante euismod eu. </p>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="accordion">
-                            <div class="accordion-head">
-                                <span>Apakah kami bisa memilih bidang webinar atau loker sesuai keinginan kami ?</span>
-                                <span class="icon">
-                                    <i class="icon fa fa-chevron-right"></i>
-                                </span>
-                            </div>
-                            <div class="accordion-body">
-                                <div class="content">
-                                    <p>Suspendisse potenti. Ut dapibus leo ut massa vulputate semper. Pellentesque maximus lorem sed elit imperdiet mattis. Duis posuere mauris ut eros rutrum sodales. Aliquam erat volutpat.</p>
-                                </div>
-                            </div>
-                        </article>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Bagaimana cara beriklan lewat website ini?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                     </div>
+                  </div>
                 </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                     Apakah beriklan lewat website ini berbayar?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
     </section>
     <!-- ***** Frequently Question End ***** -->
 

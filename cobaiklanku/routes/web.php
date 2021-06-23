@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Route;
 // Route::get('/home', function(){
 //     return view('frontend/layouts/home');
 // })->name('home');
+
 Route::get('/addwebinar', function(){
     return view('frontend/layouts/addwebinar');
 });
