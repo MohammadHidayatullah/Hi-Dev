@@ -31,6 +31,7 @@ Route::group(['middleware' => 'auth'], function () {
     });
     Route::resource('webinar', WebinarController::class);
     Route::resource('loker', LokerController::class);
+    Route::put('loker/active/{loker}','LokerController@active')->name('loker.active');
+    Route::put('loker/nonactive/{loker}','LokerController@nonactive')->name('loker.nonactive');
 });
-
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

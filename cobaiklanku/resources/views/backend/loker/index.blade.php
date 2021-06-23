@@ -36,6 +36,7 @@
                                         <th>Deskripsi</th>
                                         <th>Deadline</th>
                                         <th>Link</th>
+                                        <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                     @foreach ($loker as $item)
@@ -46,7 +47,19 @@
                                         <td>{{ $item->deadline}}</td>
                                         <td>{{ $item->link}}</td>
                                         <td>
-                                            <div class="btn-group">
+                                            <form action="{{ $item->status == 1 ? route('loker.nonactive',$item->id) : route('loker.active',$item->id)  }}" method="POST">
+                                                @csrf
+                                                @method('PUT')
+                                                @if ($item->status == 1)
+                                                <button type="submit" class="btn btn-danger">
+                                                    <i class="fa fa-times"></i> Non Aktifkan</button>
+                                                @else
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="fa fa-check"></i> Aktifkan</button>
+                                                @endif
+                                            </form>
+                                        </td>
+                                        <td>
                                                 <form action="{{ route('loker.destroy', $item->id) }}" method="POST">
                                                     <a class="btn btn-warning" href="{{ route('loker.edit', $item->id) }}">
                                                         <i class="fa fa-edit"></i></a>
@@ -56,7 +69,6 @@
                                                     onclick="return confirm('Apakah Anda yakin menghapus data?')">
                                                     <i class="fa fa-trash-o"></i></button>
                                                 </form>
-                                            </div>
                                         </td>
                                     </tr>
                                     @endforeach

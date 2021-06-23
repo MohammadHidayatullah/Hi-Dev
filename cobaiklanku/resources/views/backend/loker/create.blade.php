@@ -45,12 +45,13 @@
                                 {!! csrf_field() !!}
                                 {!! isset($loker) ? method_field('PUT') : '' !!}
                                 <input type="hidden" name="id" value="{{ isset($loker) ? $loker->id : '' }}"> 
+                                <input type="hidden" name="pamflet_awal" value="{{ isset($loker) ? $loker->pamflet_loker : '' }}"> 
                                 <div class="form-group">
                                     <label for="cname" class="control-label col-lg-2">Pamflet loker
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
                                         <input type="file" class="form-control" id="pamflet" name="pamflet" minlenght="5"
-                                        value="{{ isset($loker) ? $loker->pamflet_loker : '' }}" require/>
+                                        require/>
                                     </div>
                                 </div>
                                 <div class="form-group">
