@@ -18,7 +18,7 @@ class LokerController extends Controller
     }
     public function store(Request $request)
     {
-        
+
         if ($request->hasfile('pamflet')) {
             $pamflet = $request->file('pamflet');
             $namapamflet = $pamflet->getClientOriginalName();
@@ -45,9 +45,9 @@ class LokerController extends Controller
                                  return view('backend.loker.5', compact('loker'));
                              }
                              public function update(Request $request)
-                             {   
-                                 
-                                
+                             {
+
+
                                  if ($request->pamflet==null){
                                     DB::table('tb_loker')->where('id', $request->id)->update([
                                         'judul_loker' =>$request->judul,

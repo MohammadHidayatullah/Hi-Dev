@@ -42,7 +42,7 @@
             </div>
           </form>
           <form method="POST" action="{{ route('register') }}" class="sign-up-form">
-            @csrf 
+            @csrf
             <h2 class="title">Sign up</h2>
             <div class="input-field">
               <i class="fas fa-user"></i>

@@ -11,7 +11,7 @@
                 <li><i class="ico_document_alt"></i>Daftar Webinar</li>
                 <li><i class="fa fa-files-o"></i>Tambah Webinar</li>
             </ol>
-        </div>    
+        </div>
         </div>
 
         <!-- form -->
@@ -27,7 +27,7 @@
                             <p>{{ $message }}</p>
                         </div>
                         @endif
-                       
+
                             <table class="table table-striped table-advance table-hover">
                                 <tbody>
                                     <tr>
@@ -36,6 +36,7 @@
                                         <th>Deskripsi</th>
                                         <th>Deadline</th>
                                         <th>Link</th>
+                                        <th>Status</th>
                                         <th>Action</th>
                                     </tr>
                                     @foreach ($webinar as $item)
@@ -46,13 +47,26 @@
                                         <td>{{ $item->deadline}}</td>
                                         <td>{{ $item->link}}</td>
                                         <td>
+                                            <form action="{{ $item->status == 1 ? route('webinar.nonactive',$item->id) : route('webinar.active',$item->id)  }}" method="POST">
+                                                @csrf
+                                                @method('PUT')
+                                                @if ($item->status == 1)
+                                                <button type="submit" class="btn btn-danger">
+                                                    <i class="fa fa-times"></i> Non Aktifkan</button>
+                                                @else
+                                                <button type="submit" class="btn btn-primary">
+                                                    <i class="fa fa-check"></i> Aktifkan</button>
+                                                @endif
+                                            </form>
+                                        </td>
+                                        <td>
                                             <div class="btn-group">
                                                 <form action="{{ route('webinar.destroy', $item->id) }}" method="POST">
                                                     <a class="btn btn-warning" href="{{ route('webinar.edit', $item->id) }}">
                                                         <i class="fa fa-edit"></i></a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger" 
+                                                    <button type="submit" class="btn btn-danger"
                                                     onclick="return confirm('Apakah Anda yakin menghapus data?')">
                                                     <i class="fa fa-trash-o"></i></button>
                                                 </form>

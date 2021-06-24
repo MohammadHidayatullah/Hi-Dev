@@ -11,7 +11,7 @@
                 <li><i class="ico_document_alt"></i>Daftar Loker</li>
                 <li><i class="fa fa-files-o"></i>Tambah Loker</li>
             </ol>
-        </div>    
+        </div>
         </div>
 
         <!-- form -->
@@ -27,7 +27,7 @@
                             <p>{{ $message }}</p>
                         </div>
                         @endif
-                       
+
                             <table class="table table-striped table-advance table-hover">
                                 <tbody>
                                     <tr>
@@ -65,7 +65,7 @@
                                                         <i class="fa fa-edit"></i></a>
                                                     @csrf
                                                     @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger" 
+                                                    <button type="submit" class="btn btn-danger"
                                                     onclick="return confirm('Apakah Anda yakin menghapus data?')">
                                                     <i class="fa fa-trash-o"></i></button>
                                                 </form>
