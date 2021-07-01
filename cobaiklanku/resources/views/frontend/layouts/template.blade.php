@@ -104,6 +104,7 @@ https://templatemo.com/tm-537-art-factory
         <div class="row text-center mb-5 " style ="margin-top: -70px;">
             <div class="col">
                 <h2>WEBINAR</h2>
+                <p class="text-end fst-normal"><a href="#">Lihat Semua ></a></p>
             </div>
         </div>
         <div class="row">
@@ -112,40 +113,45 @@ https://templatemo.com/tm-537-art-factory
                     <img src="{{ asset ('frontend/assets/images/webinar1.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">BSI DIGINATION</h5>
-                      <p class="card-text">"Self-Actualization Towards New Normal Era". 24 Juni 2020, 10.00 s/d 11.00 WIB</p>
-                      <a href="#" class="btn btn-primary">Daftar</a>
+                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                        "Self-Actualization Towards New Normal Era". 24 Juni 2020, 10.00 s/d 11.00 WIB</p>
+                      <a href="#" class="btn btn-outline-info">Read More</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar2.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Webinar Kesehatan</h5>
-                      <p class="card-text">"Edukasi Pencegahan & Pengendalian Covid-19". 17 Desember 2020, 08.00 WIB s/d selesai</p>
-                      <a href="#" class="btn btn-primary">Daftar</a>
+                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                        "Edukasi Pencegahan & Pengendalian Covid-19". 17 Desember 2020, 08.00 WIB s/d selesai</p>
+                      <a href="#" class="btn btn-outline-info">Read More</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar3.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Webinar Kesehatan</h5>
-                      <p class="card-text">"Strategi Pemberian Imunisasi Tambahan Pada Daerah Cakupan Imunisasi Rendah"</p>
-                      <a href="#" class="btn btn-primary">Daftar</a>
+                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                        "Strategi Pemberian Imunisasi Tambahan Pada Daerah Cakupan Imunisasi Rendah"</p>
+                      <a href="#" class="btn btn-outline-info">Read More</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar4.jpg') }}" class="card-img-top" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Webinar Perbankan</h5>
-                      <p class="card-text">"Strategi Peningkatan Kredit Konsumer". 17 Juli 2020, 16.00 s/d 17.30 WIB</p>
-                      <a href="#" class="btn btn-primary">Daftar</a>
+                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                        "Strategi Peningkatan Kredit Konsumer". 17 Juli 2020, 16.00 s/d 17.30 WIB</p>
+                      <a href="#" class="btn btn-outline-info">Read More</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem;">
                     <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
                     <div class="card-body">
                       <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-primary">Daftar</a>
+                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                        "Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
+                      <a href="#" class="btn btn-outline-info">Read More</a>
                     </div>
                 </div>
             </div>
@@ -212,40 +218,45 @@ https://templatemo.com/tm-537-art-factory
                         <img src="{{ asset ('frontend/assets/images/loker1.jpeg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Tenaga Kontrak</h5>
-                          <p class="card-text">Lamaran ditujukan kepada Kepala SMKN 2 Pangkalpinang. Paling lambat 17 Januari 2020</p>
-                          <a href="#" class="btn btn-primary">Daftar</a>
+                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                            Lamaran ditujukan kepada Kepala SMKN 2 Pangkalpinang. Paling lambat 17 Januari 2020</p>
+                          <a href="#" class="btn btn-outline-info">Read More</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker2.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">General Affair & Auditor</h5>
-                          <p class="card-text">Larita Bakery Shop. Laki-laki, usia maksimal 30 tahun. Dan dapat bekerja dalam tim.</p>
-                          <a href="#" class="btn btn-primary">Daftar</a>
+                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                            Larita Bakery Shop. Laki-laki, usia maksimal 30 tahun. Dan dapat bekerja dalam tim.</p>
+                          <a href="#" class="btn btn-outline-info">Read More</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker3.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">PT Pos Indonesia</h5>
-                          <p class="card-text">Marketing-Custommer Service-Account Executive-Tenaga Pengantar. Kunjungi lowongancpnsbumn.com</p>
-                          <a href="#" class="btn btn-primary">Daftar</a>
+                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                            Marketing-Custommer Service-Account Executive-Tenaga Pengantar. Kunjungi lowongancpnsbumn.com</p>
+                          <a href="#" class="btn btn-outline-info">Read More</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker4.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Tenaga Pendidik Tetap</h5>
-                          <p class="card-text">Lamaran dikirim ke Yayasan Thawalib Padang Panjang. Lamaran ditutup 30 Nophember 2020.</p>
-                          <a href="#" class="btn btn-primary">Daftar</a>
+                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                            Lamaran dikirim ke Yayasan Thawalib Padang Panjang. Lamaran ditutup 30 Nophember 2020.</p>
+                          <a href="#" class="btn btn-outline-info">Read More</a>
                         </div>
                     </div>
                     <div class="card" style="width: 18rem;">
                         <img src="{{ asset ('frontend/assets/images/loker5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
                         <div class="card-body">
                           <h5 class="card-title">Kepala Distributor</h5>
-                          <p class="card-text">PT. Nabawi Herbal Indonesia. Pria, Maksimal 40 tahun. Pendidikan minimal S1/Sederajat.</p>
-                          <a href="#" class="btn btn-primary">Daftar</a>
+                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                            PT. Nabawi Herbal Indonesia. Pria, Maksimal 40 tahun. Pendidikan minimal S1/Sederajat.</p>
+                          <a href="#" class="btn btn-outline-info">Read More</a>
                         </div>
                     </div>
                 </div>

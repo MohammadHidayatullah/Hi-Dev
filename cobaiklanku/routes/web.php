@@ -35,3 +35,11 @@ Route::group(['middleware' => 'auth'], function () {
     Route::put('loker/nonactive/{loker}','LokerController@nonactive')->name('loker.nonactive');
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/listwebinar', function () {
+    return view('frontend/layouts/listwebinar');
+});
+
+Route::get('/listloker', function () {
+    return view('frontend/layouts/listloker');
+});

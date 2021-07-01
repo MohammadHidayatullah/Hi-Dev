@@ -11,4 +11,5 @@ public function index()
 {
     return view('home');
 }
+
 }
