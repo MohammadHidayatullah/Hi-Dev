@@ -33,8 +33,22 @@ https://templatemo.com/tm-537-art-factory
     </div>
     <!-- ***** Preloader End ***** -->
 
-
     @include('frontend/layouts/navbar')
+
+    <!-- ***** Detail Webinar Start ***** -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <h2></h2>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ***** Detail Webinar End ***** -->
+
+
 
     <!-- *** Content Detail Webinar Start ****-->
     <div class="container">

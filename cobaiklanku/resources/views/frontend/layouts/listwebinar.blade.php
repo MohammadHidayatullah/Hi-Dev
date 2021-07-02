@@ -129,8 +129,6 @@ https://templatemo.com/tm-537-art-factory
             </div>
 
             <!-- ***** Pagination Start ***** -->
-            
-
             <nav aria-label="...">
                 <ul class="pagination justify-content-center">
                   <li class="page-item disabled">
@@ -146,7 +144,6 @@ https://templatemo.com/tm-537-art-factory
                   </li>
                 </ul>
               </nav>
-
             <!-- ***** Pagination End ***** -->
 
         </div>
