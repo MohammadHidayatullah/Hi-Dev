@@ -74,14 +74,14 @@ https://templatemo.com/tm-537-art-factory
     <section class="section" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                <div class="col-lg-7 col-md-12 col-sm-12 mt-5" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
                     <img src="{{ asset('frontend/assets/images/left-image.png') }}" class="rounded img-fluid d-block mx-auto" alt="App">
                 </div>
                 <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
-                    <div class="left-heading">
+                    <div class="left-heading mt-5">
                         <h5>WEBINAR</h5>
                     </div>
-                    <p>Pasang iklan webinar Anda agar terhubung dengan leads berpotensi untuk event Anda. Dapatkan juga sarana Branding
+                    <p class="mt-5">Pasang iklan webinar Anda agar terhubung dengan leads berpotensi untuk event Anda. Dapatkan juga sarana Branding
                     dan promosi produk yang tertarget dengan Iklanku. </p>
                     <ul>
                         <a href="#" class="main-button">Pasang Iklan Webinar</a>
@@ -109,51 +109,17 @@ https://templatemo.com/tm-537-art-factory
         </div>
         <div class="row">
             <div class="owl-carousel owl-theme">
+              @foreach ($webinar as $item)
                 <div class="card" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar1.jpg') }}" class="card-img-top" alt="...">
+                    <img src="{{ asset('images/webinar/'. $item->pamflet_webinar) }}" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">BSI DIGINATION</h5>
+                      <h5 class="card-title">{{ $item->judul_webinar }}</h5>
                       <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                        "Self-Actualization Towards New Normal Era". 24 Juni 2020, 10.00 s/d 11.00 WIB</p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
+                        {{ $item->deskripsi }}</p>
+                      <a href="{{ url('detailwebinar/'. $item->id) }}" class="btn btn-outline-info">Read More</a>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar2.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Kesehatan</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                        "Edukasi Pencegahan & Pengendalian Covid-19". 17 Desember 2020, 08.00 WIB s/d selesai</p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar3.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Kesehatan</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                        "Strategi Pemberian Imunisasi Tambahan Pada Daerah Cakupan Imunisasi Rendah"</p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar4.jpg') }}" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Perbankan</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                        "Strategi Peningkatan Kredit Konsumer". 17 Juli 2020, 16.00 s/d 17.30 WIB</p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                        "Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
+              @endforeach
             </div>
         </div>
     </div>
@@ -214,51 +180,19 @@ https://templatemo.com/tm-537-art-factory
             </div>
             <div class="row">
                 <div class="owl-carousel owl-theme">
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/loker1.jpeg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tenaga Kontrak</h5>
-                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                            Lamaran ditujukan kepada Kepala SMKN 2 Pangkalpinang. Paling lambat 17 Januari 2020</p>
-                          <a href="#" class="btn btn-outline-info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/loker2.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">General Affair & Auditor</h5>
-                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                            Larita Bakery Shop. Laki-laki, usia maksimal 30 tahun. Dan dapat bekerja dalam tim.</p>
-                          <a href="#" class="btn btn-outline-info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/loker3.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">PT Pos Indonesia</h5>
-                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                            Marketing-Custommer Service-Account Executive-Tenaga Pengantar. Kunjungi lowongancpnsbumn.com</p>
-                          <a href="#" class="btn btn-outline-info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/loker4.jpg') }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Tenaga Pendidik Tetap</h5>
-                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                            Lamaran dikirim ke Yayasan Thawalib Padang Panjang. Lamaran ditutup 30 Nophember 2020.</p>
-                          <a href="#" class="btn btn-outline-info">Read More</a>
-                        </div>
-                    </div>
-                    <div class="card" style="width: 18rem;">
-                        <img src="{{ asset ('frontend/assets/images/loker5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Kepala Distributor</h5>
-                          <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                            PT. Nabawi Herbal Indonesia. Pria, Maksimal 40 tahun. Pendidikan minimal S1/Sederajat.</p>
-                          <a href="#" class="btn btn-outline-info">Read More</a>
-                        </div>
-                    </div>
+                  @foreach ($loker as $item)
+                  <div class="col-md-3 mb-3">
+                      <div class="card mb-5" style="width: 18rem;">
+                          <img src="{{ asset('images/loker/'. $item->pamflet_loker) }}" class="card-img-top" class="img-fluid" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">{{ $item->judul_loker }}</h5>
+                            <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                              {{ $item->deskripsi }} </p>
+                            <a href="{{ url('detailloker/'. $item->id) }}" class="btn btn-outline-info">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+                  @endforeach
                 </div>
             </div>
         </div>
@@ -340,7 +274,7 @@ https://templatemo.com/tm-537-art-factory
                            3. Click "Share" and choose "Embed map" tab
                            4. Copy only URL and paste it within the src="" field below
                     -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1197183.8373802372!2d-1.9415093691103689!3d6.781986417238027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdb96f349e85efd%3A0xb8d1e0b88af1f0f5!2sKumasi+Central+Market!5e0!3m2!1sen!2sth!4v1532967884907" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.428878694446!2d113.7202710146991!3d-8.15947178400688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sPoliteknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1625462278248!5m2!1sid!2sid" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <!-- ***** Contact Map End ***** -->

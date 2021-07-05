@@ -37,27 +37,44 @@ https://templatemo.com/tm-537-art-factory
 
     <!-- ***** Detail Webinar Start ***** -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <h2></h2>
-
+    <section class="section" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="batas1">
+                    <img src="{{ asset('images/webinar/'. $webinar->pamflet_webinar) }}" class="rounded img-fluid d-block mx-auto" alt="App">
+                    </div>
+                </div>
+                <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <div class="batas2">
+                        <br>
+                    <div class="left-heading ">
+                        <h5 >{{ $webinar->judul_webinar }}</h5>
+                    </div>
+                    <br>
+                    <p >{{ $webinar->deskripsi }}</p>
+                    <br>
+                    <ul>
+                        <a href="{{ $webinar->deskripsi }}" class="main-button">Daftar</a>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    
 
     <!-- ***** Detail Webinar End ***** -->
 
 
 
     <!-- *** Content Detail Webinar Start ****-->
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                
-            </div>
-        </div>
-    </div>
+    
 
     <!-- *** Content Detail Webinar End ****-->
 

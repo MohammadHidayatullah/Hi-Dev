@@ -62,18 +62,18 @@ class WebinarController extends Controller
                                                   ->with('success', 'Data webinar Kerja Berhasil DiHapus');
                              }
                              public function active($id){
-                                 DB::table('tb_loker')->where('id', $id)->update([
+                                 DB::table('tb_webinar')->where('id', $id)->update([
                                      'status'=>1
                                  ]);
-                                 return redirect()->route('loker.index')
+                                 return redirect()->route('webinar.index')
                                                 ->with('success','Iklan sudah aktif!');
                              }
                              public function nonactive($id)
                              {
-                                 DB::table('tb_loker')->where('id', $id)->update([
+                                 DB::table('tb_webinar')->where('id', $id)->update([
                                      'status'=>0
                                  ]);
-                                 return redirect()->route('loker.index')
+                                 return redirect()->route('webinar.index')
                                                 ->with('success','Iklan sudah aktif!');
                              }
 }

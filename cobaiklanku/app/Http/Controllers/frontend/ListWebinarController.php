@@ -1,15 +1,19 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\frontend;
 
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Pagination\CursorPaginator;
+use DB;
 
 class ListWebinarController extends Controller
 {
 
-public function listwebinar()
-{
-    return view('listwebinar');
-}
+    public function index()
+    {
+        $webinar = DB::table('tb_webinar')->simplePaginate(8);
+        return view('frontend.layouts.listwebinar', compact('webinar'));
+    }
 
 }

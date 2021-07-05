@@ -47,104 +47,31 @@ https://templatemo.com/tm-537-art-factory
             </div>
         </div>
         <div class="row justify-content-center">
+          
+          @foreach ($webinar as $item)
             <div class="col-md-3 mb-3">
                 <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar1.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
+                    <img src="{{ asset('images/webinar/'. $item->pamflet_webinar) }}" class="card-img-top" class="img-fluid" alt="...">
                     <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
+                      <h5 class="card-title">{{ $item->judul_webinar }}</h5>
+                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
+                        {{ $item->deskripsi }} </p>
+                      <a href="{{ url('detailwebinar/'. $item->id) }}" class="btn btn-outline-info">Read More</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar2.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
+          @endforeach
+          
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="d-block col-6 pagination">
+                {{ $webinar->links() }}
+              </div>
             </div>
-            <div class="col-md-3 mb-3">
-                <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar3.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <button type="submit" id="" class="main-button justify-content-end">  Tambah Webinar</button>
             </div>
-            <div class="col-md-3 mb-3">
-                <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar4.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-3">
-                <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset ('frontend/assets/images/webinar5.jpg') }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Webinar Politik</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">"Indonesia Bangkit 2021". 07 April 2021, 09.30 s/d 16.30 WIB. Gratis, Free e-Sertifikat. </p>
-                      <a href="#" class="btn btn-outline-info">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ***** Pagination Start ***** -->
-            <nav aria-label="...">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-            <!-- ***** Pagination End ***** -->
+          </div>
 
         </div>
     </section>

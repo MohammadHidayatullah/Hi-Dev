@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use DB;
 
 class HomeController extends Controller
 {
@@ -27,6 +28,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('frontend/home');
+        $loker = DB::table('tb_loker')->get();
+        $webinar = DB::table('tb_webinar')->get();
+        return view('frontend/home', compact('webinar', 'loker'));
     }
+    
+
 }

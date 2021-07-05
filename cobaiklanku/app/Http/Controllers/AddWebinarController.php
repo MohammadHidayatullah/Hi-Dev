@@ -1,10 +1,12 @@
- <?php
+<?php
 
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use DB;
 
-class AddWebinarController extends Controller
+class AddWebinarController  extends Controller
+
 {
     public function index()
     {

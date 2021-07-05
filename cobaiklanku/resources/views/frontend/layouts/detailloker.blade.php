@@ -33,54 +33,50 @@ https://templatemo.com/tm-537-art-factory
     </div>
     <!-- ***** Preloader End ***** -->
 
-
     @include('frontend/layouts/navbar')
 
-    <!-- *** Content Webinar Start ****-->
-    
-   <!-- ***** Features Small Start ***** -->
-   <section class="section" id="services">
-    <div class="container">
-        <div class="row text-center mb-5 " style ="margin-top: -70px;">
-        </div>
-        <div class="row justify-content-center">
+    <!-- ***** Detail Webinar Start ***** -->
 
-          @foreach ($loker as $item)
-            <div class="col-md-3 mb-3">
-                <div class="card mb-5" style="width: 18rem;">
-                    <img src="{{ asset('images/loker/'. $item->pamflet_loker) }}" class="card-img-top" class="img-fluid" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">{{ $item->judul_loker }}</h5>
-                      <p class="card-text" style="overflow: hidden; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical;">
-                        {{ $item->deskripsi }} </p>
-                      <a href="{{ url('detailloker/'. $item->id) }}" class="btn btn-outline-info">Read More</a>
+    <section class="section" id="">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
+                    <div class="batas1">
+                    <img src="{{ asset('images/loker/'. $loker->pamflet_loker) }}" class="rounded img-fluid d-block mx-auto" alt="App">
+                    </div>
+                </div>
+                <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
+                    <div class="batas2">
+                        <br>
+                    <div class="left-heading ">
+                        <h5 >{{ $loker->judul_loker }}</h5>
+                    </div>
+                    <br>
+                    <p >{{ $loker->deskripsi }}</p>
+                    <br>
+                    <ul>
+                        <a href="{{ $loker->deskripsi }}" class="main-button">Daftar</a>
+                    </ul>
                     </div>
                 </div>
             </div>
-          @endforeach
-            
-            <!-- ***** Pagination Start ***** -->
-            <nav aria-label="...">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
-            <!-- ***** Pagination End ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="hr"></div>
+                </div>
+            </div>
         </div>
     </section>
-    <!-- ***** Features Small End ***** -->
+    
 
-    <!-- *** Content Webinar End ****-->
+    <!-- ***** Detail Webinar End ***** -->
+
+
+
+    <!-- *** Content Detail Webinar Start ****-->
+    
+
+    <!-- *** Content Detail Webinar End ****-->
 
 
 

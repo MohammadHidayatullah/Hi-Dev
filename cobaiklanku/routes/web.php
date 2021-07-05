@@ -31,15 +31,27 @@ Route::group(['middleware' => 'auth'], function () {
     });
     Route::resource('webinar', WebinarController::class);
     Route::resource('loker', LokerController::class);
+    Route::put('webinar/active/{webinar}','WebinarController@active')->name('webinar.active');
+    Route::put('webinar/nonactive/{webinar}','WebinarController@nonactive')->name('webinar.nonactive');
     Route::put('loker/active/{loker}','LokerController@active')->name('loker.active');
     Route::put('loker/nonactive/{loker}','LokerController@nonactive')->name('loker.nonactive');
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/listwebinar', function () {
-    return view('frontend/layouts/listwebinar');
+
+Route::resource('addwebinarloker', AddWebinarController::class);
+
+Route::group(['namespace' => 'frontend'], function () {
+    Route::get('listwebinar', 'ListWebinarController@index');
+    Route::get('detailwebinar/{id}', 'DetailWebinarController@index')->name('detailwb');
 });
 
-Route::get('/listloker', function () {
-    return view('frontend/layouts/listloker');
+Route::group(['namespace' => 'frontend'], function () {
+    Route::get('listloker', 'ListLokerController@index');
+    Route::get('detailloker/{id}', 'DetailLokerController@index')->name('detaillk');
 });
+
+
+
+
+
