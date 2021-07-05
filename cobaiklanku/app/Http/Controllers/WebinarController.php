@@ -45,8 +45,11 @@ class WebinarController extends Controller
                              }
                              public function update(Request $request)
                              {
+                                $pamflet = $request->file('pamflet');
+                                $namapamflet = $pamflet->getClientOriginalName();
+                                $pathpamflet = $pamflet->move('images/webinar', $namapamflet);
                                  DB::table('tb_webinar')->where('id', $request->id)->update([
-                                    'pamflet_webinar' => $request->pamflet,
+                                    'pamflet_webinar' => $namapamflet,
                                     'judul_webinar' =>$request->judul,
                                     'deskripsi'=>$request->deskripsi,
                                     'deadline'=>$request->deadline,
