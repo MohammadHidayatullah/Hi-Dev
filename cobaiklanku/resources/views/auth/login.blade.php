@@ -41,7 +41,7 @@
               </a>
             </div>
           </form>
-          <form method="POST" action="{{ route('register') }}" class="sign-up-form">
+          <form method="POST" action="{{ url('register') }}" class="sign-up-form">
             @csrf
             <h2 class="title">Sign up</h2>
             <div class="input-field">
@@ -60,7 +60,7 @@
                 <i class="fas fa-lock"></i>
                 <input id="password-confirm" type="password" placeholder="Confirm Password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" value="{{ old('password-confirm') }}" required autocomplete="new-password" />
               </div>
-            <input type="submit" class="btn" value="Sign up" />
+            <button type="submit" class="btn">Sign Up</button>
             <p class="social-text">Or Sign up with social platforms</p>
             <div class="social-media">
               <a href="#" class="social-icon">
