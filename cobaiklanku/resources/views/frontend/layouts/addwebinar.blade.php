@@ -65,31 +65,32 @@ https://templatemo.com/tm-537-art-factory
                 <input type="hidden" name="id" value="{{ isset($webinar) ? $webinar->id : '' }}">
                 <div class="mb-2">
                     <label for="formFile" class="form-label" >Pamflet Webinar</label>
-                    <input class="form-control" type="file" id="Pamflet"
+                    <input class="form-control" type="file" name="pamflet"
                     value="{{ isset($webinar) ? $webinar->pamflet_webinar : '' }}" require/>
                 </div>
                 <div class="mb-2">
                     <label for="exampleFormControlInput1" class="form-label" >Judul Webinar</label>
-                    <input type="text" class="form-control" id="Judul" placeholder=" "
+                    <input type="text" class="form-control" name="judul" placeholder=" "
                     value="{{ isset($webinar) ? $webinar->judul_webinar : '' }}" require/>
                 </div>
                 <div class="mb-2">
                     <label for="exampleFormControlInput1" class="form-label">Deskripsi</label>
-                    <input type="text" class="form-control" id="Deskripsi" placeholder=" "
+                    <input type="text" class="form-control" name="deskripsi" placeholder=" "
                     value="{{ isset($webinar) ? $webinar->deskripsi : '' }}" require/>
                 </div>
                 <div class="mb-2">
                     <label for="exampleFormControlInput1" class="form-label">Deadline</label>
-                    <input type="date" class="form-control" id="Deadline" placeholder=" "
+                    <input type="date" class="form-control" name="deadline" placeholder=" "
                     value="{{ isset($webinar) ? $webinar->deadline : '' }}" require/>
                 </div>
                 <div class="mb-2">
                     <label for="exampleFormControlInput1" class="form-label">Link</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder=" "
+                    <input type="text" class="form-control" name="link" placeholder=" "
                     value="{{ isset($webinar) ? $webinar->link : '' }}" require/>
                 </div>
-                 <button type="button" class="btn btn-danger btn-sm">Kembali</button>
-                 <button type="button" class="btn btn-primary btn-sm">Simpan</button>
+                 <button type="button" class="btn btn-danger btn-sm">Kembali
+                 <a href="{{ route('listwb') }}"></button>
+                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
                  <a href="{{ route('webinar.index') }}"><button class="btn btn-default">
                 </div>
               </div>

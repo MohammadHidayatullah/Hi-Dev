@@ -42,7 +42,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::resource('addwebinar', AddWebinarController::class);
 
 Route::group(['namespace' => 'frontend'], function () {
-    Route::get('listwebinar', 'ListWebinarController@index');
+    Route::get('listwebinar', 'ListWebinarController@index')->name('listwb');
     Route::get('detailwebinar/{id}', 'DetailWebinarController@index')->name('detailwb');
 });
 

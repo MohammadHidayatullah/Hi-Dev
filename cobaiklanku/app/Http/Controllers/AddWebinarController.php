@@ -25,10 +25,11 @@ class AddWebinarController extends Controller
             'judul_webinar' => $request->judul,
             'deskripsi'=>$request->deskripsi,
             'deadline'=>$request->deadline,
-            'link'=>$request->link
+            'link'=>$request->link,
+            'status'=>0,
         ]);
         }
-            return redirect()->route('webinar.index')
+            return redirect()->route('listwb')
                              ->with('success', 'Data webinar baru telah disimpan');
         }
                              public function edit($id)
