@@ -60,21 +60,23 @@ https://templatemo.com/tm-537-art-factory
           @endforeach
             
             <!-- ***** Pagination Start ***** -->
-            <nav aria-label="...">
-                <ul class="pagination justify-content-center">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Prev</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                  </li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
-                  </li>
-                </ul>
-              </nav>
+            <div class="row">
+              <div class="col-lg-12 col-md-12 col-sm-12">
+                <button type="button" class="btn btn-secondary d-flex justify-content-end">Tambah Webinar</button>
+              </div>
+              </div>
+            </div>
+            <br>
+            
+            <div class="row">
+              <div class="col-lg-5 col-md-4 col-sm-12"></div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="d-block col-6 pagination">
+                  {{ $loker->links() }}
+                </div>
+              </div>
+            </div>
+            <br>
             <!-- ***** Pagination End ***** -->
         </div>
     </section>

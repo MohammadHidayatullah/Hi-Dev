@@ -84,7 +84,7 @@ https://templatemo.com/tm-537-art-factory
                     <p class="mt-5">Pasang iklan webinar Anda agar terhubung dengan leads berpotensi untuk event Anda. Dapatkan juga sarana Branding
                     dan promosi produk yang tertarget dengan Iklanku. </p>
                     <ul>
-                        <a href="#" class="main-button">Pasang Iklan Webinar</a>
+                        <a href="{{ url('addwebinar') }}" class="main-button">Pasang Iklan Webinar</a>
                     </ul>
                 </div>
             </div>
@@ -104,7 +104,7 @@ https://templatemo.com/tm-537-art-factory
         <div class="row text-center mb-5 " style ="margin-top: -70px;">
             <div class="col">
                 <h2>WEBINAR</h2>
-                <p class="text-end fst-normal"><a href="#">Lihat Semua ></a></p>
+                <p class="text-end fst-normal"><a href="{{ url('listwebinar') }}">Lihat Semua ></a></p>
             </div>
         </div>
         <div class="row">
@@ -176,6 +176,7 @@ https://templatemo.com/tm-537-art-factory
             <div class="row text-center mb-5 " style ="margin-top: -70px;">
                 <div class="col">
                     <h2>LOWONGAN PEKERJAAN</h2>
+                    <p class="text-end fst-normal"><a href="{{ url('listloker') }}">Lihat Semua ></a></p>
                 </div>
             </div>
             <div class="row">
