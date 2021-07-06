@@ -20,9 +20,9 @@ use Illuminate\Support\Facades\Route;
 //     return view('frontend/layouts/home');
 // })->name('home');
 
-Route::get('/addwebinar', function(){
-    return view('frontend/layouts/addwebinar');
-});
+// Route::get('/addwebinar', function(){
+//     return view('frontend/layouts/addwebinar');
+// });
 
 Auth::routes();
 Route::group(['middleware' => 'auth'], function () {
@@ -39,7 +39,7 @@ Route::group(['middleware' => 'auth'], function () {
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
-Route::resource('addwebinarloker', AddWebinarController::class);
+Route::resource('addwebinar', AddWebinarController::class);
 
 Route::group(['namespace' => 'frontend'], function () {
     Route::get('listwebinar', 'ListWebinarController@index');
