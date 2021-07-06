@@ -41,13 +41,15 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 Route::resource('addwebinar', AddWebinarController::class);
 
+Route::resource('addloker', AddLokerController::class);
+
 Route::group(['namespace' => 'frontend'], function () {
     Route::get('listwebinar', 'ListWebinarController@index')->name('listwb');
     Route::get('detailwebinar/{id}', 'DetailWebinarController@index')->name('detailwb');
 });
 
 Route::group(['namespace' => 'frontend'], function () {
-    Route::get('listloker', 'ListLokerController@index');
+    Route::get('listloker', 'ListLokerController@index')->name('listloker');
     Route::get('detailloker/{id}', 'DetailLokerController@index')->name('detaillk');
 });
 
