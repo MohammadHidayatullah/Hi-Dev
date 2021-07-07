@@ -52,12 +52,6 @@ https://templatemo.com/tm-537-art-factory
                         <h1><strong>IKLANKU</strong></h1>
                         <p>Sebuah platform digital yang menyediakan jasa untuk mengiklankan event webinar dan lowongan pekerjaan untuk Anda. Temukan
                             webinar dan loker serta dapatkan kemudahan dan keuntunganya hanya di Iklanku. </p>
-                        <li class="nav-item hidden-sm-down">
-                            <form class="app-search ps-3">
-                                <input type="text" class="form-control" placeholder="Search for..."> <a
-                                    class="srh-btn"><i class="ti-search"></i></a>
-                            </form>
-                        </li>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" data-scroll-reveal="enter right move 30px over 0.6s after 0.4s">
                         <img src="{{ asset ('frontend/assets/images/slider-icon.png') }}" class="rounded img-fluid d-block mx-auto" alt="First Vector Graphic">
