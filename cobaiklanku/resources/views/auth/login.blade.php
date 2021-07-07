@@ -25,21 +25,6 @@
               <input type="password" placeholder="Password" @error('password') is-invalid @enderror name="password" required autocomplete="new-password"/>
             </div>
             <button type="submit" class="btn solid">Login</button>
-            <p class="social-text">Or Sign in with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
           </form>
           <form method="POST" action="{{ url('register') }}" class="sign-up-form">
             @csrf
@@ -61,21 +46,7 @@
                 <input id="password-confirm" type="password" placeholder="Confirm Password" class="form-control @error('password') is-invalid @enderror" name="password_confirmation" value="{{ old('password-confirm') }}" required autocomplete="new-password" />
               </div>
             <button type="submit" class="btn">Sign Up</button>
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
+
           </form>
         </div>
       </div>
@@ -83,10 +54,9 @@
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
-            <h3>New here ?</h3>
+            <h3>Ingin Bergabung ?</h3>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
-              ex ratione. Aliquid!
+                Bergabung dengan Iklanku secara mudah dan cepat.
             </p>
             <button class="btn transparent" id="sign-up-btn">
               Sign up
@@ -96,16 +66,15 @@
         </div>
         <div class="panel right-panel">
           <div class="content">
-            <h3>One of us ?</h3>
+            <h3>Ingin Terhubung ?</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              laboriosam ad deleniti.
+                Iklanku membantu Anda terhubung dan berbagi informasi dengan orang lain untuk event Anda.
             </p>
             <button class="btn transparent" id="sign-in-btn">
               Sign in
             </button>
           </div>
-          <img src="img/register.svg" class="image" alt="" />
+          <img src="{{ asset ('frontend/assets/images/log2.svg') }}" class="image" alt="" />
         </div>
       </div>
     </div>
