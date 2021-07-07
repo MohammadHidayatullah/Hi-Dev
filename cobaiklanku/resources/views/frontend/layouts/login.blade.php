@@ -49,7 +49,7 @@
             </div>
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" /> 
+              <input type="email" placeholder="Email" />
             </div>
             <div class="input-field">
               <i class="fas fa-lock"></i>
@@ -80,7 +80,7 @@
           <div class="content">
             <h3>Ingin Bergabung ?</h3>
             <p>
-              Bergabung dengan Iklanku secara mudah dan cepat. 
+              Bergabung dengan Iklanku secara mudah dan cepat.
             </p>
             <button class="btn transparent" id="sign-up-btn">
               Sign up
@@ -92,7 +92,7 @@
           <div class="content">
             <h3>Ingin Terhubung ?</h3>
             <p>
-              Iklanku membantu Anda terhubung dan berbagi informasi dengan orang lain untuk event Anda. 
+              Iklanku membantu Anda terhubung dan berbagi informasi dengan orang lain untuk event Anda.
             </p>
             <button class="btn transparent" id="sign-in-btn">
               Sign in

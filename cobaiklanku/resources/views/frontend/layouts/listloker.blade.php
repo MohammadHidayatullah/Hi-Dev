@@ -37,7 +37,7 @@ https://templatemo.com/tm-537-art-factory
     @include('frontend/layouts/navbar')
 
     <!-- *** Content Webinar Start ****-->
-    
+
    <!-- ***** Features Small Start ***** -->
    <section class="section" id="services">
     <div class="container">
@@ -58,16 +58,16 @@ https://templatemo.com/tm-537-art-factory
                 </div>
             </div>
           @endforeach
-            
+
             <!-- ***** Pagination Start ***** -->
             <div class="row">
               <div class="col-lg-12 col-md-12 col-sm-12">
-                <button type="button" class="btn btn-secondary d-flex justify-content-end">Tambah Webinar</button>
+                <a class="btn btn-primary" href="{{ url('addloker') }}">Tambah</a>
               </div>
               </div>
             </div>
             <br>
-            
+
             <div class="row">
               <div class="col-lg-5 col-md-4 col-sm-12"></div>
               <div class="col-lg-6 col-md-6 col-sm-12">
@@ -104,6 +104,6 @@ https://templatemo.com/tm-537-art-factory
 
     <!-- Global Init -->
     <script src="{{ asset('frontend/assets/js/custom.js') }}"></script>
-    
+
 </body>
 </html>
