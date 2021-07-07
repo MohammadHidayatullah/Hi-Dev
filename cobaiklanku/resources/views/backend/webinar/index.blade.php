@@ -41,7 +41,7 @@
                                     </tr>
                                     @foreach ($webinar as $item)
                                     <tr>
-                                        <td>{{ $item->pamflet_webinar }}</td>
+                                        <td><img src="{{ asset('images/webinar') }}/{{ $pamflet->pamflet_webinar }}"></td>
                                         <td>{{ $item->judul_webinar }}</td>
                                         <td>{{ $item->deskripsi }}</td>
                                         <td>{{ $item->deadline}}</td>
