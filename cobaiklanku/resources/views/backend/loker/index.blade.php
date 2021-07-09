@@ -41,7 +41,7 @@
                                     </tr>
                                     @foreach ($loker as $item)
                                     <tr>
-                                        <td>{{ $item->pamflet_loker }}</td>
+                                        <td><img src="{{ asset('images/loker') }}/{{ $item->pamflet_loker }}" class="img-thumbnail" width="300px"></td>
                                         <td>{{ $item->judul_loker }}</td>
                                         <td>{{ $item->deskripsi }}</td>
                                         <td>{{ $item->deadline}}</td>
