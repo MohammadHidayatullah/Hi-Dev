@@ -37,11 +37,11 @@ https://templatemo.com/tm-537-art-factory
     @include('frontend/layouts/navbar')
 
     <!-- * Content Webinar Start **-->
-    
+
    <!-- ** Features Small Start ** -->
    <section class="section" id="services">
      <header class="panel-heading">
-      {{ isset($admin_lecturer) ? 'Mengubah' : ' ' }} 
+      {{ isset($admin_lecturer) ? 'Mengubah' : ' ' }}
      </header>
       @if ($errors->any())
        <div class="alert alert-danger">
@@ -53,10 +53,10 @@ https://templatemo.com/tm-537-art-factory
          </ul>
        </div>
        @endif
-     
+
      <div class="container">
         <div class="row  justify-content-center" >
-            <div class="col-md-8"> 
+            <div class="col-md-8">
              <div class="form">
              <form class="form-validate form-horizontal" id="addloker_form" method="POST"  enctype="multipart/form-data"
                  action="{{ isset($loker) ? route('addloker.update', $loker->id ) : route('addloker.store') }}">
@@ -64,29 +64,59 @@ https://templatemo.com/tm-537-art-factory
                     {!! isset($loker) ? method_field('PUT') : '' !!}
                 <input type="hidden" name="id" value="{{ isset($loker) ? $loker->id : '' }}">
                 <div class="mb-2">
-                    <label for="formFile" class="form-label" >Pamflet loker</label>
+                    <label for="formFile" class="form-label" >Pamflet Lowongan Pelerjaan</label>
                     <input class="form-control" type="file" name="pamflet"
+                    {{ $errors->has('pamflet') ? 'is-invalid' : '' }}
                     value="{{ isset($loker) ? $loker->pamflet_loker : '' }}" require/>
+                    @if ($errors->has('pamflet'))
+                        <span class="text-danger small">
+                            <p>{{ $errors->first('pamflet')}}</p>
+                        </span>
+                    @endif
                 </div>
                 <div class="mb-2">
-                    <label for="exampleFormControlInput1" class="form-label" >Judul loker</label>
-                    <input type="text" class="form-control" name="judul" placeholder=" "
+                    <label for="exampleFormControlInput1" class="form-label" >Judul Lowongan Pekerjaan</label>
+                    <input type="text" class="form-control" name="judul" placeholder="Judul Lowongan Pekerjaan"
+                    {{ $errors->has('judul') ? 'is-invalid' : '' }}
                     value="{{ isset($loker) ? $loker->judul_loker : '' }}" require/>
+                    @if ($errors->has('judul'))
+                        <span class="text-danger small">
+                            <p>{{ $errors->first('judul')}}</p>
+                        </span>
+                    @endif
                 </div>
                 <div class="mb-2">
-                    <label for="exampleFormControlInput1" class="form-label">Deskripsi</label>
-                    <input type="text" class="form-control" name="deskripsi" placeholder=" "
+                    <label for="exampleFormControlInput1" class="form-label">Deskripsi Lowongan Pekerjaan</label>
+                    <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Lowongan Pekerjaan"
+                    {{ $errors->has('deskripsi') ? 'is-invalid' : '' }}
                     value="{{ isset($loker) ? $loker->deskripsi : '' }}" require/>
+                    @if ($errors->has('deskripsi'))
+                    <span class="text-danger small">
+                        <p>{{ $errors->first('deskripsi')}}</p>
+                    </span>
+                @endif
                 </div>
                 <div class="mb-2">
-                    <label for="exampleFormControlInput1" class="form-label">Deadline</label>
+                    <label for="exampleFormControlInput1" class="form-label">Tanggal Terakhir Pendaftaran</label>
                     <input type="date" class="form-control" name="deadline" placeholder=" "
+                    {{ $errors->has('deadline') ? 'is-invalid' : '' }}
                     value="{{ isset($loker) ? $loker->deadline : '' }}" require/>
+                    @if ($errors->has('deadline'))
+                        <span class="text-danger small">
+                            <p>{{ $errors->first('deadline')}}</p>
+                        </span>
+                    @endif
                 </div>
                 <div class="mb-2">
-                    <label for="exampleFormControlInput1" class="form-label">Link</label>
-                    <input type="text" class="form-control" name="link" placeholder=" "
+                    <label for="exampleFormControlInput1" class="form-label">Link Pendaftaran</label>
+                    <input type="text" class="form-control" name="link" placeholder="Link Pendaftaran"
+                    {{ $errors->has('link') ? 'is-invalid' : '' }}
                     value="{{ isset($loker) ? $loker->link : '' }}" require/>
+                    @if ($errors->has('link'))
+                        <span class="text-danger small">
+                            <p>{{ $errors->first('link')}}</p>
+                        </span>
+                    @endif
                 </div>
                  <button type="button" class="btn btn-danger btn-sm">Kembali
                  <a href="{{ route('listloker') }}"></button>
@@ -117,6 +147,6 @@ https://templatemo.com/tm-537-art-factory
 
     <!-- Global Init -->
     <script src="{{ asset('frontend/assets/js/custom.js') }}"></script>
-    
+
 </body>
 </html>

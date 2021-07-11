@@ -60,4 +60,20 @@ class AddWebinarController extends Controller
                                  return redirect()->route('webinar.index')
                                                   ->with('success', 'Data webinar Kerja Berhasil DiHapus');
                              }
+                             public function proses(Request $request){
+                                 $messages = [
+                                     'required' => 'Input :attribute wajib diisi!',
+                                     'min' => 'Input :attribute harus diisi minimal :min karakter!',
+                                     'max' => 'Input :attribute harus diisi maksimal :max karakter!',
+                                 ];
+
+                                 $this->validate($request,[
+                                     'pamflet_webinar' => 'required',
+                                     'judul_webinar' => 'required|min:2|max:5',
+                                     'deskripsi' => 'required|min:5|max:10',
+                                     'deadline' => 'required',
+                                     'link' => 'required'
+                                 ], $messages);
+
+                             }
 }
