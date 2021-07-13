@@ -11,7 +11,7 @@
                 <li><i class="ico_document_alt"></i>Daftar Loker</li>
                 <li><i class="fa fa-files-o"></i>Tambah Loker</li>
             </ol>
-        </div>    
+        </div>
         </div>
 
         <!-- form -->
@@ -44,8 +44,8 @@
                                 action="{{ isset($loker) ? route('loker.update', $loker->id) : route('loker.store') }}">
                                 {!! csrf_field() !!}
                                 {!! isset($loker) ? method_field('PUT') : '' !!}
-                                <input type="hidden" name="id" value="{{ isset($loker) ? $loker->id : '' }}"> 
-                                <input type="hidden" name="pamflet_awal" value="{{ isset($loker) ? $loker->pamflet_loker : '' }}"> 
+                                <input type="hidden" name="id" value="{{ isset($loker) ? $loker->id : '' }}">
+                                <input type="hidden" name="pamflet_awal" value="{{ isset($loker) ? $loker->pamflet_loker : '' }}">
                                 <div class="form-group">
                                     <label for="cname" class="control-label col-lg-2">Pamflet loker
                                         <span class="require">*</span></label>
@@ -58,7 +58,7 @@
                                     <label for="cname" class="control-label col-lg-2">Judul loker
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="text" class="form-control" id="judul" name="judul" minlenght="2" 
+                                        <input type="text" class="form-control" id="judul" name="judul" minlenght="2"
                                         value="{{ isset($loker) ? $loker->judul_loker : '' }}"
                                         require/>
                                     </div>
@@ -67,7 +67,7 @@
                                     <label for="curl" class="control-label col-lg-2">Deksripsi
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="text" class="form-control" id="deskripsi" name="deskripsi" 
+                                        <input type="text" class="form-control" id="deskripsi" name="deskripsi"
                                         value="{{ isset($loker) ? $loker->deskripsi : '' }}"
                                         require/>
                                     </div>
@@ -76,7 +76,7 @@
                                     <label for="curl" class="control-label col-lg-2">Deadline
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="date" class="form-control" id="deadline" name="deadline" 
+                                        <input type="date" class="form-control" id="deadline" name="deadline"
                                         value="{{ isset($loker) ? $loker->deadline : '' }}"
                                         require/>
                                     </div>
@@ -85,7 +85,7 @@
                                     <label for="curl" class="control-label col-lg-2">Link
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="text" class="form-control" id="link" name="link" 
+                                        <input type="text" class="form-control" id="link" name="link"
                                         value="{{ isset($loker) ? $loker->link : '' }}"
                                         require/>
                                     </div>
@@ -126,5 +126,4 @@
         })
     </script>
 @endpush
-    
- 
+

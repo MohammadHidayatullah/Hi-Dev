@@ -65,15 +65,26 @@ class AddLokerController extends Controller
                                     'required' => 'Input :attribute wajib diisi!',
                                     'min' => 'Input :attribute harus diisi minimal :min karakter!',
                                     'max' => 'Input :attribute harus diisi maksimal :max karakter!',
+                                    'mimes' => 'Input : attribute harus berbentuk png,jpg,jpeg!',
+                                    'url' => 'Input : attribute harus berupa url!',
                                 ];
 
                                 $this->validate($request,[
-                                    'pamflet_loker' => 'required',
+                                    'pamflet_loker' => 'required|mimes:png,jpg,jpeg',
                                     'judul_loker' => 'required|min:2|max:5',
-                                    'deskripsi' => 'required|min:5|max:10',
+                                    'deskripsi' => 'required|min:10|max:25',
                                     'deadline' => 'required',
-                                    'link' => 'required'
+                                    'link' => 'required|url'
                                 ], $messages);
+
+                                $pamflet_loker =  $request->input('pamflet');
+                                 $judul_loker = $request->input('judul_loker');
+                                 $deskripsi = $request->input('deskripsi');
+                                 $deadline = $request->input('dealine');
+                                 $link = $request->input('link');
+
+                                 return "pamflet : ".$pamflet_loker.", judul_loker : ".$judul_loker.
+                                 ", deskripsi : ".$deskripsi.", deadline : ".$deadline.", link : ".$link;
 
                             }
 }
