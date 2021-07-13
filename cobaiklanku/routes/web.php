@@ -25,7 +25,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Auth::routes();
-Route::group(['middleware' => 'auth'], function () {
+Route::group(['middleware' => 'roleAdmin'], function () {
     Route::group(['namespace' => 'backend'], function () {
         Route::resource('dashboard', DashboardController::class);
     });
@@ -40,9 +40,9 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 
-Route::resource('addwebinar', AddWebinarController::class);
+Route::resource('addwebinar', AddWebinarController::class)->middleware('roleUser');
 
-Route::resource('addloker', AddLokerController::class);
+Route::resource('addloker', AddLokerController::class)->middleware('roleUser');
 
 Route::group(['namespace' => 'frontend'], function () {
     Route::get('listwebinar', 'ListWebinarController@index')->name('listwb');
