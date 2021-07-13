@@ -11,7 +11,7 @@ class ListLokerController extends Controller
 
     public function index()
     {
-        $loker = DB::table('tb_loker')->simplePaginate(8);
+        $loker = DB::table('tb_loker')->where('status','=',1)->simplePaginate(8);
         return view('frontend.layouts.listloker', compact('loker'));
     }
 

@@ -12,7 +12,7 @@ class ListWebinarController extends Controller
 
     public function index()
     {
-        $webinar = DB::table('tb_webinar')->simplePaginate(8);
+        $webinar = DB::table('tb_webinar')->where('status','=',1)->simplePaginate(8);
         return view('frontend.layouts.listwebinar', compact('webinar'));
     }
 
