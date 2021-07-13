@@ -11,6 +11,31 @@
           <form method="POST" action="{{ route('login') }}" class="sign-in-form">
             @csrf
 
+            @error('password')
+
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+
+            @enderror
+
+            @error('email')
+
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+
+            @enderror
+
+            @error('name')
+
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $message }}</strong>
+                </span>
+
+            @enderror
+
+
             {{-- Error Alert --}}
             @if(session('error'))
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
