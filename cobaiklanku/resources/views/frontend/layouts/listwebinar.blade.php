@@ -64,7 +64,10 @@ https://templatemo.com/tm-537-art-factory
 
           <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <a class="btn btn-primary" href="{{ url('addwebinar') }}">Tambah</a>
+              <div class="d-flex justify-content-end">
+                <a class="btn btn-primary" href="{{ url('addwebinar') }}">
+                  <i class="fa fa-plus"></i> Tambah</a>
+              </div>
             </div>
             </div>
           </div>
