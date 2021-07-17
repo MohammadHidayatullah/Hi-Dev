@@ -77,14 +77,18 @@ class AddLokerController extends Controller
                                     'link' => 'required|url'
                                 ], $messages);
 
-                                $pamflet_loker =  $request->input('pamflet');
-                                 $judul_loker = $request->input('judul_loker');
-                                 $deskripsi = $request->input('deskripsi');
-                                 $deadline = $request->input('dealine');
-                                 $link = $request->input('link');
+                                 $listloker = new Listloker();
+                                 $listloker->judul_loker = $request->judul;
+                                 $listloker->deskripsi_loker = $request->deskripsi;
+                                 $listloker->deadline_loker = $request->deadline;
+                                 $listloker->link_loker = $request->link;
+                                 $gambar = $request->pamflet_loker;
+                                 $gambarName = $gambar->getClietOriginalName();
+                                 $gambar->move(public_path('images/loker'),$gambarName);
+                                 $gambar->pamflet_loker = $gambarName;
+                                 $listloker->save();
 
-                                 return "pamflet : ".$pamflet_loker.", judul_loker : ".$judul_loker.
-                                 ", deskripsi : ".$deskripsi.", deadline : ".$deadline.", link : ".$link;
+                                 return redirect()->route('loker.index')->with('success', 'Data Loker Anda Berhasil di Simpan');
 
                             }
 }

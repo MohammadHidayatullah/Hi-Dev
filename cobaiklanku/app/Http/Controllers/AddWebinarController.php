@@ -77,14 +77,18 @@ class AddWebinarController extends Controller
                                      'link' => 'required|url'
                                  ], $messages);
 
-                                 $pamflet_webinar =  $request->input('pamflet');
-                                 $judul_webinar = $request->input('judul_webinar');
-                                 $deskripsi = $request->input('deskripsi');
-                                 $deadline = $request->input('dealine');
-                                 $link = $request->input('link');
+                                 $listwb = new Listwb();
+                                 $listwb->judul_webinar = $request->judul;
+                                 $listwb->deskripsi_webinar = $request->deskripsi;
+                                 $listwb->deadline_webinar = $request->deadline;
+                                 $listwb->link_webinar = $request->link;
+                                 $gambar = $request->pamflet_webinar;
+                                 $gambarName = $gambar->getClietOriginalName();
+                                 $gambar->move(public_path('images/webinar'),$gambarName);
+                                 $gambar->pamflet_webinar = $gambarName;
+                                 $listwb->save();
 
-                                 return "pamflet : ".$pamflet_webinar.", judul_webinar : ".$judul_webinar.
-                                 ", deskripsi : ".$deskripsi.", deadline : ".$deadline.", link : ".$link;
+                                 return redirect()->route('webinar.index')->with('success', 'Data Webinar Anda Berhasil di Simpan');
 
 
                              }
