@@ -47,7 +47,7 @@ https://templatemo.com/tm-537-art-factory
        <div class="alert alert-danger">
         <strong>OPPS!</strong> There were some problems with your input. <br> <br>
          <ul>
-          @foreach ($error->all() as $error)
+          @foreach ($errors->all() as $error)
            <li>{{ $error }}</li>
              @endforeach
          </ul>
@@ -67,7 +67,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="formFile" class="form-label" >Pamflet Lowongan Pelerjaan</label>
                     <input class="form-control" type="file" name="pamflet"
                     {{ $errors->has('pamflet') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->pamflet_loker : '' }}" require/>
+                    value="{{ isset($loker) ? $loker->pamflet_loker : Request::old('pamflet') }}" require/>
                     @if ($errors->has('pamflet'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('pamflet')}}</p>
@@ -78,7 +78,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="exampleFormControlInput1" class="form-label" >Judul Lowongan Pekerjaan</label>
                     <input type="text" class="form-control" name="judul" placeholder="Judul Lowongan Pekerjaan"
                     {{ $errors->has('judul') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->judul_loker : '' }}" require/>
+                    value="{{ isset($loker) ? $loker->judul_loker : Request::old('judul') }}" require/>
                     @if ($errors->has('judul'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('judul')}}</p>
@@ -89,7 +89,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="exampleFormControlInput1" class="form-label">Deskripsi Lowongan Pekerjaan</label>
                     <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Lowongan Pekerjaan"
                     {{ $errors->has('deskripsi') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->deskripsi : '' }}" require/>
+                    value="{{ isset($loker) ? $loker->deskripsi : Request::old('deskripsi') }}" require/>
                     @if ($errors->has('deskripsi'))
                     <span class="text-danger small">
                         <p>{{ $errors->first('deskripsi')}}</p>
@@ -100,7 +100,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="exampleFormControlInput1" class="form-label">Tanggal Terakhir Pendaftaran</label>
                     <input type="date" class="form-control" name="deadline" placeholder=" "
                     {{ $errors->has('deadline') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->deadline : '' }}" require/>
+                    value="{{ isset($loker) ? $loker->deadline : Request::old('deadline') }}" require/>
                     @if ($errors->has('deadline'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('deadline')}}</p>
@@ -111,7 +111,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="exampleFormControlInput1" class="form-label">Link Pendaftaran</label>
                     <input type="text" class="form-control" name="link" placeholder="Link Pendaftaran"
                     {{ $errors->has('link') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->link : '' }}" require/>
+                    value="{{ isset($loker) ? $loker->link : Request::old('link') }}" require/>
                     @if ($errors->has('link'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('link')}}</p>

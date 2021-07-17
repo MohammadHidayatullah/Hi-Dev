@@ -18,21 +18,34 @@ class WebinarController extends Controller
     }
     public function store(Request $request)
     {
+        $messages = [
+            'required' => 'Input :attribute wajib diisi!',
+            'min' => 'Input :attribute harus diisi minimal :min karakter!',
+            'mimes' => 'Input : attribute harus berbentuk png,jpg,jpeg!',
+        ];
+
+        $this->validate($request,[
+            'pamflet' => 'required|mimes:png,jpg,jpeg',
+            'judul' => 'required|min:10',
+            'deskripsi' => 'required|min:25',
+            'deadline' => 'required',
+            'link' => 'required'
+        ], $messages);
+
         if ($request->hasfile('pamflet')) {
-            $pamflet = $request->file('pamflet');
-            $namapamflet = $pamflet->getClientOriginalName();
-            $pathpamflet = $pamflet->move('images/webinar', $namapamflet);
-        DB::table('tb_webinar')->insert([
-            'pamflet_webinar' => $namapamflet,
-            'judul_webinar' => $request->judul,
-            'deskripsi'=>$request->deskripsi,
-            'deadline'=>$request->deadline,
-            'link'=>$request->link
-        ]);
+                $pamflet = $request->file('pamflet');
+                $namapamflet = $pamflet->getClientOriginalName();
+                $pathpamflet = $pamflet->move('images/webinar', $namapamflet);
+                DB::table('tb_webinar')->insert([
+                'pamflet_webinar' => $namapamflet,
+                'judul_webinar' => $request->judul,
+                'deskripsi'=>$request->deskripsi,
+                'deadline'=>$request->deadline,
+                'link'=>$request->link]);
         }
-            return redirect()->route('webinar.index')
-                             ->with('success', 'Data webinar baru telah disimpan');
-        }
+        return redirect()->route('webinar.index')
+                ->with('success', 'Data webinar baru telah disimpan');
+    }
                              public function edit($id)
                              {
                                  $webinar = DB::table('tb_webinar')->where('id', $id)->first();

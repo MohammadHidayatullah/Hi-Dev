@@ -16,6 +16,20 @@ class AddWebinarController extends Controller
     }
     public function store(Request $request)
     {
+        $messages = [
+            'required' => 'Input :attribute wajib diisi!',
+            'min' => 'Input :attribute harus diisi minimal :min karakter!',
+            'mimes' => 'Input : attribute harus berbentuk png,jpg,jpeg!',
+        ];
+
+        $this->validate($request,[
+            'pamflet' => 'required|mimes:png,jpg,jpeg',
+            'judul' => 'required|min:10',
+            'deskripsi' => 'required|min:25',
+            'deadline' => 'required',
+            'link' => 'required'
+        ], $messages);
+
         if ($request->hasfile('pamflet')) {
             $pamflet = $request->file('pamflet');
             $namapamflet = $pamflet->getClientOriginalName();
@@ -61,21 +75,7 @@ class AddWebinarController extends Controller
                                                   ->with('success', 'Data webinar Kerja Berhasil DiHapus');
                              }
                              public function proses(Request $request){
-                                 $messages = [
-                                     'required' => 'Input :attribute wajib diisi!',
-                                     'min' => 'Input :attribute harus diisi minimal :min karakter!',
-                                     'max' => 'Input :attribute harus diisi maksimal :max karakter!',
-                                     'mimes' => 'Input : attribute harus berbentuk png,jpg,jpeg!',
-                                     'url' => 'Input : attribute harus berupa url!',
-                                 ];
 
-                                 $this->validate($request,[
-                                     'pamflet_webinar' => 'required|mimes:png,jpg,jpeg',
-                                     'judul_webinar' => 'required|min:2|max:5',
-                                     'deskripsi' => 'required|min:10|max:25',
-                                     'deadline' => 'required',
-                                     'link' => 'required|url'
-                                 ], $messages);
 
                                  $listwb = new Listwb();
                                  $listwb->judul_webinar = $request->judul;

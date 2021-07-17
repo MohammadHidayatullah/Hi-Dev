@@ -47,7 +47,7 @@ https://templatemo.com/tm-537-art-factory
        <div class="alert alert-danger">
         <strong>OPPS!</strong> There were some problems with your input. <br> <br>
          <ul>
-          @foreach ($error->all() as $error)
+          @foreach ($errors->all() as $error)
            <li>{{ $error }}</li>
              @endforeach
          </ul>
@@ -66,8 +66,8 @@ https://templatemo.com/tm-537-art-factory
                 <div class="mb-2">
                     <label for="formFile" class="form-label" >Pamflet Webinar</label>
                     <input class="form-control" type="file" name="pamflet"
-                    {{ $errors->has('pamflet') ? 'is-invalid' : '' }}
-                    value="{{ isset($webinar) ? $webinar->pamflet_webinar : '' }}" require/>
+                    {{ $errors->has('pamflet') ? 'is-invalid' : ''}}
+                    value="{{ isset($webinar) ? $webinar->pamflet_webinar : Request::old('pamflet') }}" require/>
                     @if ($errors->has('pamflet'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('pamflet')}}</p>
@@ -78,7 +78,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="exampleFormControlInput1" class="form-label" >Judul Webinar</label>
                     <input type="text" class="form-control" name="judul" placeholder="Judul Webinar"
                     {{ $errors->has('judul') ? 'is-invalid' : '' }}
-                    value="{{ isset($webinar) ? $webinar->judul_webinar : ' ' }}" require/>
+                    value="{{ isset($webinar) ? $webinar->judul_webinar : Request::old('judul') }}" require/>
                     @if ($errors->has('judul'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('judul')}}</p>
@@ -89,7 +89,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="exampleFormControlInput1" class="form-label">Deskripsi Webinar</label>
                     <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Webinar"
                     {{ $errors->has('deskripsi') ? 'is-invalid' : '' }}
-                    value="{{ isset($webinar) ? $webinar->deskripsi : '' }}" require/>
+                    value="{{ isset($webinar) ? $webinar->deskripsi : Request::old('deskripsi') }}" require/>
                     @if ($errors->has('deskripsi'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('deskripsi')}}</p>
@@ -100,7 +100,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="exampleFormControlInput1" class="form-label">Tanggal Terakhir Pendaftaran</label>
                     <input type="date" class="form-control" name="deadline" placeholder=" "
                     {{ $errors->has('deadline') ? 'is-invalid' : '' }}
-                    value="{{ isset($webinar) ? $webinar->deadline : '' }}" require/>
+                    value="{{ isset($webinar) ? $webinar->deadline : Request::old('deadline') }}" require/>
                     @if ($errors->has('deadline'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('deadline')}}</p>
@@ -111,7 +111,7 @@ https://templatemo.com/tm-537-art-factory
                     <label for="exampleFormControlInput1" class="form-label">Link Pendaftaran</label>
                     <input type="text" class="form-control" name="link" placeholder="Link Pendaftaran"
                     {{ $errors->has('link') ? 'is-invalid' : '' }}
-                    value="{{ isset($webinar) ? $webinar->link : '' }}" require/>
+                    value="{{ isset($webinar) ? $webinar->link : Request::old('link') }}" require/>
                     @if ($errors->has('link'))
                         <span class="text-danger small">
                             <p>{{ $errors->first('link')}}</p>

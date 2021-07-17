@@ -18,6 +18,19 @@ class LokerController extends Controller
     }
     public function store(Request $request)
     {
+        $messages = [
+            'required' => 'Input :attribute wajib diisi!',
+            'min' => 'Input :attribute harus diisi minimal :min karakter!',
+            'mimes' => 'Input : attribute harus berbentuk png,jpg,jpeg!',
+        ];
+
+        $this->validate($request,[
+            'pamflet' => 'required|mimes:png,jpg,jpeg',
+            'judul' => 'required|min:10',
+            'deskripsi' => 'required|min:25',
+            'deadline' => 'required',
+            'link' => 'required'
+        ], $messages);
 
         if ($request->hasfile('pamflet')) {
             $pamflet = $request->file('pamflet');

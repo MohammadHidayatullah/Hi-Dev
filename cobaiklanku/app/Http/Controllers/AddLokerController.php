@@ -16,10 +16,35 @@ class AddLokerController extends Controller
     }
     public function store(Request $request)
     {
+        $messages = [
+            'required' => 'Input :attribute wajib diisi!',
+            'min' => 'Input :attribute harus diisi minimal :min karakter!',
+            'mimes' => 'Input : attribute harus berbentuk png,jpg,jpeg!',
+        ];
+
+        $this->validate($request,[
+            'pamflet' => 'required|mimes:png,jpg,jpeg',
+            'judul' => 'required|min:10',
+            'deskripsi' => 'required|min:25',
+            'deadline' => 'required',
+            'link' => 'required'
+        ], $messages);
+
+         $listloker = new Listloker();
+         $listloker->judul_loker = $request->judul;
+         $listloker->deskripsi_loker = $request->deskripsi;
+         $listloker->deadline_loker = $request->deadline;
+         $listloker->link_loker = $request->link;
+         $gambar = $request->pamflet_loker;
+         $gambarName = $gambar->getClietOriginalName();
+         $gambar->move(public_path('images/loker'),$gambarName);
+         $gambar->pamflet_loker = $gambarName;
+         $listloker->save();
         if ($request->hasfile('pamflet')) {
             $pamflet = $request->file('pamflet');
             $namapamflet = $pamflet->getClientOriginalName();
             $pathpamflet = $pamflet->move('images/loker', $namapamflet);
+
         DB::table('tb_loker')->insert([
             'pamflet_loker' => $namapamflet,
             'judul_loker' => $request->judul,
@@ -61,32 +86,7 @@ class AddLokerController extends Controller
                                                   ->with('success', 'Data loker Kerja Berhasil DiHapus');
                              }
                              public function proses(Request $request){
-                                $messages = [
-                                    'required' => 'Input :attribute wajib diisi!',
-                                    'min' => 'Input :attribute harus diisi minimal :min karakter!',
-                                    'max' => 'Input :attribute harus diisi maksimal :max karakter!',
-                                    'mimes' => 'Input : attribute harus berbentuk png,jpg,jpeg!',
-                                    'url' => 'Input : attribute harus berupa url!',
-                                ];
 
-                                $this->validate($request,[
-                                    'pamflet_loker' => 'required|mimes:png,jpg,jpeg',
-                                    'judul_loker' => 'required|min:2|max:5',
-                                    'deskripsi' => 'required|min:10|max:25',
-                                    'deadline' => 'required',
-                                    'link' => 'required|url'
-                                ], $messages);
-
-                                 $listloker = new Listloker();
-                                 $listloker->judul_loker = $request->judul;
-                                 $listloker->deskripsi_loker = $request->deskripsi;
-                                 $listloker->deadline_loker = $request->deadline;
-                                 $listloker->link_loker = $request->link;
-                                 $gambar = $request->pamflet_loker;
-                                 $gambarName = $gambar->getClietOriginalName();
-                                 $gambar->move(public_path('images/loker'),$gambarName);
-                                 $gambar->pamflet_loker = $gambarName;
-                                 $listloker->save();
 
                                  return redirect()->route('loker.index')->with('success', 'Data Loker Anda Berhasil di Simpan');
 
