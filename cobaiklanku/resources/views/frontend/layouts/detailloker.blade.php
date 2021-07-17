@@ -37,29 +37,24 @@ https://templatemo.com/tm-537-art-factory
 
     <!-- ***** Detail Webinar Start ***** -->
 
-    <section class="section" id="">
+    <section class="section" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.4s">
-                    <div class="batas1">
                     <img src="{{ asset('images/loker/'. $loker->pamflet_loker) }}" class="rounded img-thumbnail" width="600px" alt="App">
-                    </div>
                 </div>
                 <div class="left-text col-lg-5 col-md-12 col-sm-12 mobile-bottom-fix">
-                    <div class="batas2">
-                        <br>
                     <div class="left-heading ">
                         <h5 >{{ $loker->judul_loker }}</h5>
                     </div>
                     <br>
-                    <p >{{ $loker->deskripsi }}</p>
+                    <p class="text-body" >{{ $loker->deskripsi }}</p>
                     <br>
-                    <p clas>Deadline : {{ $loker->deadline }}</p>
+                    <p class="text-body">Deadline : {{ $loker->deadline }}</p>
                     <br>
                     <ul>
                         <a href="{{ $loker->link }}" class="main-button">Daftar</a>
                     </ul>
-                    </div>
                 </div>
             </div>
             <div class="row">

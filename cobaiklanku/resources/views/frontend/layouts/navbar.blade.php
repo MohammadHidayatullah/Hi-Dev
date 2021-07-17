@@ -10,7 +10,7 @@
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                        <li class="scroll-to-section"><a href="{{ url('home') }}" class="active">Home</a></li>
+                        <li class="scroll-to-section"><a href="{{ url('home') }}" >Home</a></li>
                         <li class="scroll-to-section"><a href="{{ url('listwebinar') }}">Webinar</a></li>
                         <li class="scroll-to-section"><a href="{{ url('listloker') }}">Loker</a></li>
                         <li class="scroll-to-section"><a href="#frequently-question">FAQ</a></li>
