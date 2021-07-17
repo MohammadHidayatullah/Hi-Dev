@@ -28,8 +28,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $loker = DB::table('tb_loker')->get();
-        $webinar = DB::table('tb_webinar')->get();
+        $loker = DB::table('tb_loker')->where('status','=',1)->get();
+        $webinar = DB::table('tb_webinar')->where('status','=',1)->get();
         return view('frontend/home', compact('webinar', 'loker'));
     }
     
