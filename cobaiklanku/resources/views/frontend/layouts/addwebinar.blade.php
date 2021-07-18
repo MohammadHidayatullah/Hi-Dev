@@ -63,7 +63,7 @@ https://templatemo.com/tm-537-art-factory
                     {!! csrf_field() !!}
                     {!! isset($webinar) ? method_field('PUT') : '' !!}
                 <input type="hidden" name="id" value="{{ isset($webinar) ? $webinar->id : '' }}">
-                <div class="mb-2">
+                <div class="mb-3">
                     <label for="formFile" class="form-label" >Pamflet Webinar</label>
                     <input class="form-control" type="file" name="pamflet"
                     {{ $errors->has('pamflet') ? 'is-invalid' : ''}}
@@ -74,7 +74,7 @@ https://templatemo.com/tm-537-art-factory
                         </span>
                     @endif
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label" >Judul Webinar</label>
                     <input type="text" class="form-control" name="judul" placeholder="Judul Webinar"
                     {{ $errors->has('judul') ? 'is-invalid' : '' }}
@@ -85,7 +85,7 @@ https://templatemo.com/tm-537-art-factory
                         </span>
                     @endif
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Deskripsi Webinar</label>
                     <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Webinar"
                     {{ $errors->has('deskripsi') ? 'is-invalid' : '' }}
@@ -96,7 +96,7 @@ https://templatemo.com/tm-537-art-factory
                         </span>
                     @endif
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Tanggal Terakhir Pendaftaran</label>
                     <input type="date" class="form-control" name="deadline" placeholder=" "
                     {{ $errors->has('deadline') ? 'is-invalid' : '' }}
@@ -107,7 +107,7 @@ https://templatemo.com/tm-537-art-factory
                         </span>
                     @endif
                 </div>
-                <div class="mb-2">
+                <div class="mb-3">
                     <label for="exampleFormControlInput1" class="form-label">Link Pendaftaran</label>
                     <input type="text" class="form-control" name="link" placeholder="Link Pendaftaran"
                     {{ $errors->has('link') ? 'is-invalid' : '' }}
@@ -118,14 +118,16 @@ https://templatemo.com/tm-537-art-factory
                         </span>
                     @endif
                 </div>
-                 <button type="button" class="btn btn-danger btn-sm">Kembali
-                 <a href="{{ route('listwb') }}"></button>
-                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
-                 <a href="{{ route('webinar.index') }}"><button class="btn btn-default">
+                <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a class="btn btn-danger" href="{{ route('listwb') }}" role="button">Kembali</a>
+                    <a class="btn btn-primary" href="{{ route('webinar.index') }}" role="button">Simpan</a>
                 </div>
               </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
   </section>
     <!-- ** Features Small End ** -->
 

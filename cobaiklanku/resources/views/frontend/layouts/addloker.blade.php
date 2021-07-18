@@ -54,79 +54,88 @@ https://templatemo.com/tm-537-art-factory
        </div>
        @endif
 
-     <div class="container">
-        <div class="row  justify-content-center" >
-            <div class="col-md-8">
-             <div class="form">
-             <form class="form-validate form-horizontal" id="addloker_form" method="POST"  enctype="multipart/form-data"
-                 action="{{ isset($loker) ? route('addloker.update', $loker->id ) : route('addloker.store') }}">
-                    {!! csrf_field() !!}
-                    {!! isset($loker) ? method_field('PUT') : '' !!}
-                <input type="hidden" name="id" value="{{ isset($loker) ? $loker->id : '' }}">
-                <div class="mb-2">
-                    <label for="formFile" class="form-label" >Pamflet Lowongan Pelerjaan</label>
-                    <input class="form-control" type="file" name="pamflet"
-                    {{ $errors->has('pamflet') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->pamflet_loker : Request::old('pamflet') }}" require/>
-                    @if ($errors->has('pamflet'))
+        <div class="container">
+            <div class="row  justify-content-center" >
+                <div class="col-md-8">
+                    <div class="form">
+                    <form class="form-validate form-horizontal" id="addloker_form" method="POST"  enctype="multipart/form-data"
+                    action="{{ isset($loker) ? route('addloker.update', $loker->id ) : route('addloker.store') }}">
+                        {!! csrf_field() !!}
+                        {!! isset($loker) ? method_field('PUT') : '' !!}
+                    <input type="hidden" name="id" value="{{ isset($loker) ? $loker->id : '' }}">
+                    <div class="mb-3">
+                        <label for="formFile" class="form-label" >Pamflet Lowongan Pekerjaan</label>
+                        <input class="form-control" type="file" name="pamflet"
+                        {{ $errors->has('pamflet') ? 'is-invalid' : '' }}
+                        value="{{ isset($loker) ? $loker->pamflet_loker : Request::old('pamflet') }}" require/>
+                        @if ($errors->has('pamflet'))
+                            <span class="text-danger small">
+                                <p>{{ $errors->first('pamflet')}}</p>
+                            </span>
+                        @endif
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label" >Judul Lowongan Pekerjaan</label>
+                        <input type="text" class="form-control" name="judul" placeholder="Judul Lowongan Pekerjaan"
+                        {{ $errors->has('judul') ? 'is-invalid' : '' }}
+                        value="{{ isset($loker) ? $loker->judul_loker : Request::old('judul') }}" require/>
+                        @if ($errors->has('judul'))
+                            <span class="text-danger small">
+                                <p>{{ $errors->first('judul')}}</p>
+                            </span>
+                        @endif
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Deskripsi Lowongan Pekerjaan</label>
+                        <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Lowongan Pekerjaan"
+                        {{ $errors->has('deskripsi') ? 'is-invalid' : '' }}
+                        value="{{ isset($loker) ? $loker->deskripsi : Request::old('deskripsi') }}" require/>
+                        @if ($errors->has('deskripsi'))
                         <span class="text-danger small">
-                            <p>{{ $errors->first('pamflet')}}</p>
+                            <p>{{ $errors->first('deskripsi')}}</p>
                         </span>
                     @endif
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Tanggal Terakhir Pendaftaran</label>
+                        <input type="date" class="form-control" name="deadline" placeholder=" "
+                        {{ $errors->has('deadline') ? 'is-invalid' : '' }}
+                        value="{{ isset($loker) ? $loker->deadline : Request::old('deadline') }}" require/>
+                        @if ($errors->has('deadline'))
+                            <span class="text-danger small">
+                                <p>{{ $errors->first('deadline')}}</p>
+                            </span>
+                        @endif
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Link Pendaftaran</label>
+                        <input type="text" class="form-control" name="link" placeholder="Link Pendaftaran"
+                        {{ $errors->has('link') ? 'is-invalid' : '' }}
+                        value="{{ isset($loker) ? $loker->link : Request::old('link') }}" require/>
+                        @if ($errors->has('link'))
+                            <span class="text-danger small">
+                                <p>{{ $errors->first('link')}}</p>
+                            </span>
+                        @endif
+                    </div>
+                    <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end ">
+                        <a class="btn btn-danger" href="{{ route('listloker') }}" role="button">Kembali</a>
+                        <a class="btn btn-primary" href="{{ route('loker.index') }}" role="button">Simpan</a>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    </div>
                 </div>
-                <div class="mb-2">
-                    <label for="exampleFormControlInput1" class="form-label" >Judul Lowongan Pekerjaan</label>
-                    <input type="text" class="form-control" name="judul" placeholder="Judul Lowongan Pekerjaan"
-                    {{ $errors->has('judul') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->judul_loker : Request::old('judul') }}" require/>
-                    @if ($errors->has('judul'))
-                        <span class="text-danger small">
-                            <p>{{ $errors->first('judul')}}</p>
-                        </span>
-                    @endif
-                </div>
-                <div class="mb-2">
-                    <label for="exampleFormControlInput1" class="form-label">Deskripsi Lowongan Pekerjaan</label>
-                    <input type="text" class="form-control" name="deskripsi" placeholder="Deskripsi Lowongan Pekerjaan"
-                    {{ $errors->has('deskripsi') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->deskripsi : Request::old('deskripsi') }}" require/>
-                    @if ($errors->has('deskripsi'))
-                    <span class="text-danger small">
-                        <p>{{ $errors->first('deskripsi')}}</p>
-                    </span>
-                @endif
-                </div>
-                <div class="mb-2">
-                    <label for="exampleFormControlInput1" class="form-label">Tanggal Terakhir Pendaftaran</label>
-                    <input type="date" class="form-control" name="deadline" placeholder=" "
-                    {{ $errors->has('deadline') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->deadline : Request::old('deadline') }}" require/>
-                    @if ($errors->has('deadline'))
-                        <span class="text-danger small">
-                            <p>{{ $errors->first('deadline')}}</p>
-                        </span>
-                    @endif
-                </div>
-                <div class="mb-2">
-                    <label for="exampleFormControlInput1" class="form-label">Link Pendaftaran</label>
-                    <input type="text" class="form-control" name="link" placeholder="Link Pendaftaran"
-                    {{ $errors->has('link') ? 'is-invalid' : '' }}
-                    value="{{ isset($loker) ? $loker->link : Request::old('link') }}" require/>
-                    @if ($errors->has('link'))
-                        <span class="text-danger small">
-                            <p>{{ $errors->first('link')}}</p>
-                        </span>
-                    @endif
-                </div>
-                 <button type="button" class="btn btn-danger btn-sm">Kembali
-                 <a href="{{ route('listloker') }}"></button>
-                 <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
-                 <a href="{{ route('loker.index') }}"><button class="btn btn-default">
-                </div>
-              </div>
             </div>
         </div>
-  </section>
+
+
+
+    </section>
     <!-- ** Features Small End ** -->
 
     <!-- * Content Webinar End **-->
