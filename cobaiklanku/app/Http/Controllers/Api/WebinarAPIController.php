@@ -8,13 +8,15 @@ use DB;
 
 class WebinarAPIController extends Controller
 {
-    public function index (){
-        $webinar = DB::table('tb_webinar')->get();
+    public function index()
+    {
+        $webinar = DB::table('tb_webinar')->where(['status' => 1])->get();
         return response()->json($webinar, 201);
     }
 
-    public function show ($id){
-        $webinar = DB::table('tb_webinar')->where('id',$id)->get();
+    public function show($id)
+    {
+        $webinar = DB::table('tb_webinar')->where(['id' => $id, 'status' => 1])->get();
         return response()->json($webinar, 201);
     }
 }
