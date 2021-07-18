@@ -202,7 +202,7 @@ https://templatemo.com/tm-537-art-factory
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-heading">
-                        <h2>Frequently Asked Questions</h2>
+                        <h2>Location</h2>
                     </div>
                 </div>
                 <div class="offset-lg-3 col-lg-6">
@@ -212,7 +212,7 @@ https://templatemo.com/tm-537-art-factory
                 </div>
             </div>
             <!-- ***** Section Title End ***** -->
-
+             <!-- *****
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
@@ -253,6 +253,7 @@ https://templatemo.com/tm-537-art-factory
               </div>
             </div>
     </section>
+    ***** -->
     <!-- ***** Frequently Question End ***** -->
 
 
@@ -269,7 +270,7 @@ https://templatemo.com/tm-537-art-factory
                            3. Click "Share" and choose "Embed map" tab
                            4. Copy only URL and paste it within the src="" field below
                     -->
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.428878694446!2d113.7202710146991!3d-8.15947178400688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sPoliteknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1625462278248!5m2!1sid!2sid" width="100%" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.428878694446!2d113.7202710146991!3d-8.15947178400688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd695b617d8f623%3A0xf6c4437632474338!2sPoliteknik%20Negeri%20Jember!5e0!3m2!1sid!2sid!4v1625462278248!5m2!1sid!2sid" width="100%" height="700px" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <!-- ***** Contact Map End ***** -->
