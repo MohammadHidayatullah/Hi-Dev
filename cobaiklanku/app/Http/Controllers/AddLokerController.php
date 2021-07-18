@@ -50,7 +50,7 @@ class AddLokerController extends Controller
             'judul_loker' => $request->judul,
             'deskripsi'=>$request->deskripsi,
             'deadline'=>$request->deadline,
-            'link'=>$request->link,
+            'link'=>"http://".$request->link,
             'status'=>0,
         ]);
         }

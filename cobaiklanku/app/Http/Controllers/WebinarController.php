@@ -41,7 +41,7 @@ class WebinarController extends Controller
                 'judul_webinar' => $request->judul,
                 'deskripsi'=>$request->deskripsi,
                 'deadline'=>$request->deadline,
-                'link'=>$request->link]);
+                'link'=>"http://".$request->link]);
         }
         return redirect()->route('webinar.index')
                 ->with('success', 'Data webinar baru telah disimpan');

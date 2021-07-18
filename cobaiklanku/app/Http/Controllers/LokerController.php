@@ -41,7 +41,7 @@ class LokerController extends Controller
             'judul_loker' =>$request->judul,
             'deskripsi'=>$request->deskripsi,
             'deadline'=>$request->deadline,
-            'link'=>$request->link
+            'link'=>"http://".$request->link
         ]);
         }
             return redirect()->route('loker.index')

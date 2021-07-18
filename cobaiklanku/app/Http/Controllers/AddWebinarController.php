@@ -39,7 +39,7 @@ class AddWebinarController extends Controller
             'judul_webinar' => $request->judul,
             'deskripsi'=>$request->deskripsi,
             'deadline'=>$request->deadline,
-            'link'=>$request->link,
+            'link'=>"http://".$request->link,
             'status'=>0,
         ]);
         }
