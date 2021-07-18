@@ -25,7 +25,7 @@
                     <div class="alert alert-danger">
                         <strong>OPPS!</strong> There were some problems with your input. <br> <br>
                         <ul>
-                            @foreach ($error->all() as $error)
+                            @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
                             @endforeach
                         </ul>

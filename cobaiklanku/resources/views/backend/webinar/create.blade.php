@@ -11,7 +11,7 @@
                 <li><i class="ico_document_alt"></i>Daftar Webinar</li>
                 <li><i class="fa fa-files-o"></i>Tambah Webinar</li>
             </ol>
-        </div>    
+        </div>
         </div>
 
         <!-- form -->
@@ -25,7 +25,7 @@
                     <div class="alert alert-danger">
                         <strong>OPPS!</strong> There were some problems with your input. <br> <br>
                         <ul>
-                            @foreach ($error->all() as $error)
+                            @foreach ($errors->all() as $error)
                             <li>{{ $error }}</li>
                             @endforeach
                         </ul>
@@ -44,7 +44,7 @@
                                 action="{{ isset($webinar) ? route('webinar.update', $webinar->id) : route('webinar.store') }}">
                                 {!! csrf_field() !!}
                                 {!! isset($webinar) ? method_field('PUT') : '' !!}
-                                <input type="hidden" name="id" value="{{ isset($webinar) ? $webinar->id : '' }}"> 
+                                <input type="hidden" name="id" value="{{ isset($webinar) ? $webinar->id : '' }}">
                                 <div class="form-group">
                                     <label for="cname" class="control-label col-lg-2">Pamflet Webinar
                                         <span class="require">*</span></label>
@@ -57,7 +57,7 @@
                                     <label for="cname" class="control-label col-lg-2">Judul Webinar
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="text" class="form-control" id="judul" name="judul" minlenght="2" 
+                                        <input type="text" class="form-control" id="judul" name="judul" minlenght="2"
                                         value="{{ isset($webinar) ? $webinar->judul_webinar : '' }}"
                                         require/>
                                     </div>
@@ -66,7 +66,7 @@
                                     <label for="curl" class="control-label col-lg-2">Deksripsi
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="text" class="form-control" id="deskripsi" name="deskripsi" 
+                                        <input type="text" class="form-control" id="deskripsi" name="deskripsi"
                                         value="{{ isset($webinar) ? $webinar->deskripsi : '' }}"
                                         require/>
                                     </div>
@@ -75,7 +75,7 @@
                                     <label for="curl" class="control-label col-lg-2">Deadline
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="date" class="form-control" id="deadline" name="deadline" 
+                                        <input type="date" class="form-control" id="deadline" name="deadline"
                                         value="{{ isset($webinar) ? $webinar->deadline : '' }}"
                                         require/>
                                     </div>
@@ -84,7 +84,7 @@
                                     <label for="curl" class="control-label col-lg-2">Link
                                         <span class="require">*</span></label>
                                     <div class="col-lg-10">
-                                        <input type="text" class="form-control" id="link" name="link" 
+                                        <input type="text" class="form-control" id="link" name="link"
                                         value="{{ isset($webinar) ? $webinar->link : '' }}"
                                         require/>
                                     </div>
@@ -125,5 +125,4 @@
         })
     </script>
 @endpush
-    
- 
+
