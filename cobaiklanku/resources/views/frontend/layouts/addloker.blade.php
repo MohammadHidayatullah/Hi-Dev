@@ -125,9 +125,6 @@ https://templatemo.com/tm-537-art-factory
                     <br>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
                     </div>
                 </div>
             </div>
