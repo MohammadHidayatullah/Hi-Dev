@@ -30,16 +30,8 @@ class AddLokerController extends Controller
             'link' => 'required'
         ], $messages);
 
-         $listloker = new Listloker();
-         $listloker->judul_loker = $request->judul;
-         $listloker->deskripsi_loker = $request->deskripsi;
-         $listloker->deadline_loker = $request->deadline;
-         $listloker->link_loker = $request->link;
-         $gambar = $request->pamflet_loker;
-         $gambarName = $gambar->getClietOriginalName();
-         $gambar->move(public_path('images/loker'),$gambarName);
-         $gambar->pamflet_loker = $gambarName;
-         $listloker->save();
+
+
         if ($request->hasfile('pamflet')) {
             $pamflet = $request->file('pamflet');
             $namapamflet = $pamflet->getClientOriginalName();
@@ -86,6 +78,17 @@ class AddLokerController extends Controller
                                                   ->with('success', 'Data loker Kerja Berhasil DiHapus');
                              }
                              public function proses(Request $request){
+
+                                $listloker = new Listloker();
+                                $listloker->judul_loker = $request->judul;
+                                $listloker->deskripsi_loker = $request->deskripsi;
+                                $listloker->deadline_loker = $request->deadline;
+                                $listloker->link_loker = $request->link;
+                                $gambar = $request->pamflet_loker;
+                                $gambarName = $gambar->getClietOriginalName();
+                                $gambar->move(public_path('images/loker'),$gambarName);
+                                $gambar->pamflet_loker = $gambarName;
+                                $listloker->save();
 
 
                                  return redirect()->route('loker.index')->with('success', 'Data Loker Anda Berhasil di Simpan');
