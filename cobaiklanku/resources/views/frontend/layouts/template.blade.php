@@ -261,7 +261,7 @@ https://templatemo.com/tm-537-art-factory
         <div class="container-fluid">
             <div class="row">
                 <!-- ***** Contact Map Start ***** -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="col-lg-12 col-md-6 col-sm-12">
                     <div id="map">
                       <!-- How to change your own map point
                            1. Go to Google Maps
@@ -275,7 +275,7 @@ https://templatemo.com/tm-537-art-factory
                 <!-- ***** Contact Map End ***** -->
 
                 <!-- ***** Contact Form Start ***** -->
-                <div class="col-lg-6 col-md-6 col-sm-12">
+                {{-- <div class="col-lg-6 col-md-6 col-sm-12">
                     <div class="contact-form">
                         <form id="contact" action="" method="post">
                           <div class="row">
@@ -303,7 +303,7 @@ https://templatemo.com/tm-537-art-factory
                         </form>
                     </div>
                 </div>
-                <!-- ***** Contact Form End ***** -->
+                <!-- ***** Contact Form End ***** --> --}}
             </div>
         </div>
     </section>
