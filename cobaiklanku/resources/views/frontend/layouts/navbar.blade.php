@@ -6,7 +6,9 @@
             <div class="col-12">
                 <nav class="main-nav">
                     <!-- ***** Logo Start ***** -->
-                    <a href="#" class="logo">IKLANKU</a>
+                        <a class="navbar-brand scroll-to-section" href="#">
+                          <img src="{{ asset ('frontend/assets/images/logoiklanku.png') }}" width="120" height="70" style="margin-top: 11px" alt="">
+                        </a>
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
