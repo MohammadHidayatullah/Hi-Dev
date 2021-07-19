@@ -39,6 +39,7 @@ Route::group(['middleware' => 'roleAdmin'], function () {
 });
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index']);
 
 
 Route::resource('addwebinar', AddWebinarController::class)->middleware('roleUser');
