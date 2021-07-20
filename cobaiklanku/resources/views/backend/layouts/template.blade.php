@@ -59,7 +59,7 @@
             <a href="index.html" class="logo">IKLANKU <span class="lite">ADMIN</span></a>
             <!--logo end-->
 
-            <div class="nav search-row" id="top_menu">
+            {{-- <div class="nav search-row" id="top_menu">
                 <!--  search form start -->
                 <ul class="nav top-menu">
                     <li>
@@ -69,7 +69,7 @@
                     </li>
                 </ul>
                 <!--  search form end -->
-            </div>
+            </div> --}}
 
             <div class="top-nav notification-row">
                 <!-- notificatoin dropdown start-->
@@ -78,16 +78,16 @@
 
                     <!-- alert notification end-->
                     <!-- user login dropdown start-->
-                    <li class="dropdown">
+                    {{-- <li class="dropdown">
                         <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                             <span class="profile-ava">
                                 <img alt="" src="img/avatar1_small.jpg">
                             </span>
-                            <span class="username">Jenifer Smith</span>
+                            <span class="username">{{ $users->name }}</span>
                             <b class="caret"></b>
                         </a>
-                        <ul class="dropdown-menu extended logout">
-                            <div class="log-arrow-up"></div>
+                        <ul class="dropdown-menu extended logout"> --}}
+                            {{-- <div class="log-arrow-up"></div>
                             <li class="eborder-top">
                                 <a href="#"><i class="icon_profile"></i> My Profile</a>
                             </li>
@@ -99,10 +99,10 @@
                             </li>
                             <li>
                                 <a href="#"><i class="icon_chat_alt"></i> Chats</a>
-                            </li>
+                            </li> --}}
                             <li>
                                 <a href="{{ route('logout') }}" onclick="event.preventDefault();
-                              document.getElementById('logout-form').submit();"><i class="icon_key_alt"></i>
+                              document.getElementById('logout-form').submit();">
                                     {{ __('Logout') }}
                                 </a>
 
@@ -111,16 +111,16 @@
                                     @csrf
                                 </form>
                             </li>
-                            <li>
+                            {{-- <li>
                                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
                             </li>
                             <li>
                                 <a href="documentation.html"><i class="icon_key_alt"></i> Documentation</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <!-- user login dropdown end -->
-                </ul>
+                {{-- </ul> --}}
                 <!-- notificatoin dropdown end-->
             </div>
         </header>

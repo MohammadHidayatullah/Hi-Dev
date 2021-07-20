@@ -4,17 +4,17 @@
           <!-- sidebar menu start-->
           <ul class="sidebar-menu">
             <li class="active">
-              <a class="" href="index.html">
+              <a class="" href="{{ url('dashboard') }}">
                             <i class="icon_house_alt"></i>
                             <span>Dashboard</span>
                         </a>
             </li>
-            <li >
+            {{-- <li >
                 <a class="" href="index.html">
                   <i class="icon_profile"></i>
                   <span>Profile</span>
                 </a>
-            </li>
+            </li> --}}
             <li class="sub-menu">
               <a href="javascript:;" class="">
                 <span>WEBINAR</span>
@@ -40,4 +40,3 @@
         </div>
       </aside>
       <!--sidebar end-->
-  

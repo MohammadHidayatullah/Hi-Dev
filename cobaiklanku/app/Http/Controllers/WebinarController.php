@@ -58,6 +58,18 @@ class WebinarController extends Controller
                              }
                              public function update(Request $request)
                              {
+
+                                if ($request->pamflet == null) {
+                                    DB::table('tb_webinar')->where('id', $request->id)->update([
+                                        'judul_webinar' => $request->judul,
+                                        'deskripsi' => $request->deskripsi,
+                                        'deadline' => $request->deadline,
+                                        'link' => $request->link
+                                    ]);
+                                } else {
+                                    if (file_exists(public_path('images/webinar/' . $request->pamflet_awal))) {
+                                        unlink(public_path('images/webinar/' . $request->pamflet_awal));
+                                    }
                                 $pamflet = $request->file('pamflet');
                                 $namapamflet = $pamflet->getClientOriginalName();
                                 $pathpamflet = $pamflet->move('images/webinar', $namapamflet);
@@ -68,6 +80,7 @@ class WebinarController extends Controller
                                     'deadline'=>$request->deadline,
                                     'link'=>$request->link
                                  ]);
+                                }
                                  return redirect()->route('webinar.index')
                                                   ->with('success','data webinar Berhasil di Perbarui');
                              }

@@ -316,17 +316,14 @@ https://templatemo.com/tm-537-art-factory
         <div class="container">
             <div class="row">
                 <div class="col-lg-7 col-md-12 col-sm-12">
-                    <p class="copyright">Copyright &copy; HI-DEV
-
-                </p>
+                    <p class="copyright">Copyright &copy; HI-DEV</p>
                 </div>
                 <div class="col-lg-5 col-md-12 col-sm-12">
                     <ul class="social">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                        <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><strong>Contact Us</strong></li>
+                        <li><a href="mailto:hideveloper66@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                        <li><a href="https://wa.me/6285157881508"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
