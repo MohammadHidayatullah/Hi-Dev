@@ -119,8 +119,10 @@ https://templatemo.com/tm-537-art-factory
                     @endif
                 </div>
                 <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end">
-                    <a class="btn btn-danger" href="{{ route('listwb') }}" role="button">Kembali</a>
-                    <a class="btn btn-primary" href="{{ route('webinar.index') }}" role="button">Simpan</a>
+                    <button type="button" class="btn btn-danger btn-sm">Kembali
+                    <a href="{{ route('listwb') }}"></button>
+                    <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
+                    <a href="{{ route('webinar.index') }}"><button class="btn btn-default">
                 </div>
               </div>
             </div>

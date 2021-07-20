@@ -41,10 +41,16 @@ https://templatemo.com/tm-537-art-factory
    <!-- ***** Features Small Start ***** -->
    <section class="section" id="services">
     <div class="container">
-        <div class="row text-center mb-5 " style ="margin-top: -70px;">
+        <div class="row text-center mb-5 " style ="margin-top: -20px;">
             <div class="col">
-                <h2>WEBINAR</h2>
+                <h2><strong>WEBINAR</strong></h2>
             </div>
+
+                    @if ($message = Session::get('success'))
+                        <div class="alert alert-sucess">
+                            <h3>{{ $message }}</h3>
+                        </div>
+                        @endif
         </div>
         <div class="row justify-content-center">
 

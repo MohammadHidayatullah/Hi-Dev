@@ -119,16 +119,17 @@ https://templatemo.com/tm-537-art-factory
                         @endif
                     </div>
                     <div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-end ">
-                        <a class="btn btn-danger" href="{{ route('listloker') }}" role="button">Kembali</a>
-                        <a class="btn btn-primary" href="{{ route('loker.index') }}" role="button">Simpan</a>
-                    </div>
-                    <br>
-                    <br>
-                    <br>
+                        <button type="button" class="btn btn-danger btn-sm">Kembali
+                        <a href="{{ route('listloker') }}"></button>
+                        <button type="submit" class="btn btn-primary btn-sm">Simpan</button>
+                        <a href="{{ route('loker.index') }}"><button class="btn btn-default">
                     </div>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
 
 
 

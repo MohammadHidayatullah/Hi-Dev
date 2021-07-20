@@ -44,7 +44,7 @@ class WebinarController extends Controller
                 'link'=>"http://".$request->link]);
         }
         return redirect()->route('webinar.index')
-                ->with('success', 'Data webinar baru telah disimpan');
+                ->with('success', 'Data webinar baru telah disimpan ya');
     }
                              public function edit($id)
                              {
