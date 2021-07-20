@@ -46,8 +46,8 @@ https://templatemo.com/tm-537-art-factory
                 <h2><strong>LOWONGAN PEKERJAAN</strong></h2>
             </div>
                     @if ($message = Session::get('success'))
-                        <div class="alert alert-sucess">
-                            <h3>{{ $message }}</h3>
+                        <div class="alert alert-success">
+                            <span class="alert alert-success">{{ $message }}</span>
                         </div>
                         @endif
         </div>

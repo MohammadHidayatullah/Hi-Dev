@@ -44,7 +44,7 @@ class AddWebinarController extends Controller
         ]);
         }
             return redirect()->route('listwb')
-                             ->with('success', 'Iklan Anda Berhasil Disubmit, Silahkan Tunggu Beberapa Saat Iklan Akan Dikonfirmasi oleh Admin Yaaa');
+                             ->with('success', 'Iklan anda berhasil terkirim, Silahkan tunggu konfirmasi selanjutnya');
         }
                              public function edit($id)
                              {

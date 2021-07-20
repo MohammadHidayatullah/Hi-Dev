@@ -12,27 +12,27 @@
             @csrf
 
             @error('password')
-
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
+            <div class="alert alert-danger">
+                <span class="alert alert-danger" role="alert">
+                    {{ $message }}
                 </span>
-
+            </div>
             @enderror
 
             @error('email')
-
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
+            <div class="alert alert-danger">
+                <span class="alert alert-danger" role="alert">
+                    {{ $message }}
                 </span>
-
+            </div>
             @enderror
 
             @error('name')
-
-                <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
+            <div class="alert alert-danger">
+                <span class="alert alert-danger" role="alert">
+                    {{ $message }}
                 </span>
-
+            </div>
             @enderror
 
 
@@ -41,7 +41,7 @@
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     {{session('error')}}
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                            <span class="alert alert-danger" aria-hidden="true">&times;</span>
                         </button>
                 </div>
             @endif
