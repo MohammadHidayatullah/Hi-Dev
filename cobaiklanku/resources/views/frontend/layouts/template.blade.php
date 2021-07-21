@@ -320,7 +320,7 @@ https://templatemo.com/tm-537-art-factory
                 </div>
                 <div class="col-lg-5 col-md-12 col-sm-12">
                     <ul class="social">
-                        <li><strong>Contact Us</strong></li>
+                        <li>Contact Us</li>
                         <li><a href="mailto:hideveloper66@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
                         <li><a href="https://wa.me/6285157881508"><i class="fa fa-whatsapp"></i></a></li>
                         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
