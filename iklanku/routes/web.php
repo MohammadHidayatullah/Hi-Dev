@@ -56,7 +56,7 @@ Route::group(['namespace' => 'frontend'], function () {
     Route::get('detailloker/{id}', 'DetailLokerController@index')->name('detaillk');
 });
 
-
-
-
-
+Route::get('/clear-cache', function() {
+    $exitCode = Artisan::call('config:cache');
+    return 'DONE'; //Return anything
+  });
