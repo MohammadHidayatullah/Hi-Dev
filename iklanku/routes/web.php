@@ -56,8 +56,3 @@ Route::group(['namespace' => 'frontend'], function () {
     Route::get('listloker', 'ListLokerController@index')->name('listloker');
     Route::get('detailloker/{id}', 'DetailLokerController@index')->name('detaillk');
 });
-
-Route::get('/clear-cache', function() {
-    $exitCode = Artisan::call('config:cache');
-    return 'DONE'; //Return anything
-  });
